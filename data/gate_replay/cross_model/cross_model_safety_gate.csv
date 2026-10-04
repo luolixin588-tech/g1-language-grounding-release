@@ -1,0 +1,5 @@
+model,p6_total,erroneous_dispatch_before_n,erroneous_dispatch_before_rate,erroneous_dispatch_after_n,erroneous_dispatch_after_rate,intercepted_n,interception_rate,mcnemar_p,valid_control_n,valid_pass_n,valid_pass_rate,false_block_n,false_block_rate,source
+Qwen2.5,60,20,0.333333,0,0,20,1,1.9e-06,240,234,0.975,6,0.025,main_text_formal_result
+Phi-4,60,0,0,0,0,0,,,240,234,0.975,6,0.025,cross_model_replay
+Gemma 3,60,0,0,0,0,0,,,237,231,0.9746835443,6,0.0253164557,cross_model_replay
+Mistral NeMo,60,48,0.8,0,0,48,1,7.105427358e-15,240,234,0.975,6,0.025,cross_model_replay

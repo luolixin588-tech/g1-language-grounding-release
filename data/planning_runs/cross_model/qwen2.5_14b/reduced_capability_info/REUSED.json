@@ -1,0 +1,11 @@
+{
+  "reused": true,
+  "decision": "A",
+  "reason": "Frozen Qwen v1.1 reduced_capability_info formal run; identical condition file.",
+  "source_run": "data/planning_runs/qwen2.5_14b/reduced_capability_info/reduced_capability_info_20260821T052504Z_6e0dd3ea",
+  "model_id": "qwen2.5_14b",
+  "ollama_tag": "qwen2.5:14b",
+  "paper_condition": "reduced_capability_info",
+  "benchmark_version": "v1.1",
+  "source_run_original": "<original-repo>/runs/reduced_capability_info/reduced_capability_info_20260821T052504Z_6e0dd3ea"
+}

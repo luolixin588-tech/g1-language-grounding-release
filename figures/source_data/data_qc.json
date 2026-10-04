@@ -1,0 +1,20 @@
+{
+  "n_semantic_tasks": 60,
+  "n_unique_task_ids": 60,
+  "n_instructions": 120,
+  "n_unique_sample_ids": 120,
+  "family_counts": {
+    "P1_spoken_response": 10,
+    "P2_single_physical_action": 10,
+    "P3_parameterized_control": 10,
+    "P4_multistep_physical_sequence": 10,
+    "P5_mixed_speech_action_sequence": 10,
+    "P6_unsupported_or_constrained": 10
+  },
+  "gold_mismatch_pairs": 0,
+  "instruction_text_mismatch": 0,
+  "banned_tools_in_catalog": [],
+  "n_issues": 0,
+  "issues": [],
+  "ok": true
+}

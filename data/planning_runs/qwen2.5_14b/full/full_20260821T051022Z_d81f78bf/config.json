@@ -1,0 +1,18 @@
+{
+  "benchmark_version": "v1.1",
+  "condition": {
+    "name": "full",
+    "description": "Structured JSON generation, full capability catalog, deterministic validation retries.",
+    "model": "qwen2.5:14b",
+    "temperature": 0,
+    "use_json_schema": true,
+    "use_validation_retries": true,
+    "max_attempts": 3,
+    "reduced_capability_info": false
+  },
+  "n_jobs": 360,
+  "n_instructions": 120,
+  "n_repeats": 3,
+  "seed": 0,
+  "smoke": false
+}

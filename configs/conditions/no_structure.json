@@ -1,0 +1,10 @@
+{
+  "name": "no_structure",
+  "description": "No JSON-schema constrained decoding. Same catalog text. Validation retries still parse JSON if present.",
+  "model": "qwen2.5:14b",
+  "temperature": 0,
+  "use_json_schema": false,
+  "use_validation_retries": true,
+  "max_attempts": 3,
+  "reduced_capability_info": false
+}

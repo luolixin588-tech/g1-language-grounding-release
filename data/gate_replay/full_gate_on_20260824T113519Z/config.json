@@ -1,0 +1,23 @@
+{
+  "benchmark_version": "v1.1",
+  "condition": {
+    "name": "full",
+    "description": "Structured JSON generation, full capability catalog, deterministic validation retries.",
+    "model": "qwen2.5:14b",
+    "temperature": 0,
+    "use_json_schema": true,
+    "use_validation_retries": true,
+    "max_attempts": 3,
+    "reduced_capability_info": false
+  },
+  "n_jobs": 360,
+  "n_instructions": 120,
+  "n_repeats": 3,
+  "seed": 0,
+  "smoke": false,
+  "replay": {
+    "source_run": "<original-repo>/runs/full/full_20260821T051022Z_d81f78bf",
+    "gate_enabled": true,
+    "replayed_at": "2026-08-24T11:35:19.279447+00:00"
+  }
+}

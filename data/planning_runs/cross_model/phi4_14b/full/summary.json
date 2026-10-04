@@ -1,0 +1,83 @@
+{
+  "run_id": "full",
+  "condition": "full",
+  "benchmark_version": "v1.1",
+  "n_runs": 360,
+  "n_instructions": 120,
+  "task_success_rate": 0.975,
+  "n_task_success": 351,
+  "plan_validity_rate": 1.0,
+  "n_plan_valid": 360,
+  "planning_latency_ms": {
+    "median": 715.1601555087836,
+    "p95": 1607.7941760013346,
+    "mean": 820.6695096552721
+  },
+  "success_by_family": {
+    "P1_spoken_response": {
+      "n": 60,
+      "task_success_rate": 0.95,
+      "plan_validity_rate": 1.0,
+      "capability_selection_accuracy": 1.0,
+      "parameter_accuracy": 1.0,
+      "order_accuracy": 1.0
+    },
+    "P2_single_physical_action": {
+      "n": 60,
+      "task_success_rate": 1.0,
+      "plan_validity_rate": 1.0,
+      "capability_selection_accuracy": 1.0,
+      "parameter_accuracy": 1.0,
+      "order_accuracy": 1.0
+    },
+    "P3_parameterized_control": {
+      "n": 60,
+      "task_success_rate": 1.0,
+      "plan_validity_rate": 1.0,
+      "capability_selection_accuracy": 1.0,
+      "parameter_accuracy": 1.0,
+      "order_accuracy": 1.0
+    },
+    "P4_multistep_physical_sequence": {
+      "n": 60,
+      "task_success_rate": 1.0,
+      "plan_validity_rate": 1.0,
+      "capability_selection_accuracy": 1.0,
+      "parameter_accuracy": 1.0,
+      "order_accuracy": 1.0
+    },
+    "P5_mixed_speech_action_sequence": {
+      "n": 60,
+      "task_success_rate": 0.9,
+      "plan_validity_rate": 1.0,
+      "capability_selection_accuracy": 1.0,
+      "parameter_accuracy": 0.975,
+      "order_accuracy": 0.975
+    },
+    "P6_unsupported_or_constrained": {
+      "n": 60,
+      "task_success_rate": 1.0,
+      "plan_validity_rate": 1.0,
+      "capability_selection_accuracy": 1.0,
+      "parameter_accuracy": 1.0,
+      "order_accuracy": 1.0
+    }
+  },
+  "success_by_formulation": {
+    "canonical": {
+      "n": 180,
+      "task_success_rate": 0.9666666666666667
+    },
+    "paraphrase": {
+      "n": 180,
+      "task_success_rate": 0.9833333333333333
+    }
+  },
+  "n_instructions_success_all_repeats": 117,
+  "n_instructions_with_three_repeats": 120,
+  "diagnostics": {
+    "capability_selection_accuracy": 1.0,
+    "parameter_accuracy": 0.9958333333333333,
+    "order_accuracy": 0.9958333333333333
+  }
+}

@@ -1,0 +1,21 @@
+model,condition,P1,P2,P3,P4,P5,P6
+Qwen2.5-14B,full,1.0,1.0,1.0,1.0,1.0,0.6666666666666666
+Qwen2.5-14B,reduced_capability_info,1.0,0.0,1.0,0.0,0.35,0.5666666666666667
+Qwen2.5-14B,no_capability_semantics,1.0,0.05,1.0,0.4,0.4,0.55
+Qwen2.5-14B,no_parameter_semantics,1.0,1.0,0.25,0.4,0.65,0.5833333333333334
+Qwen2.5-14B,no_schema_constrained_decoding,0.95,1.0,1.0,1.0,0.9666666666666667,0.6666666666666666
+Phi-4 14B,full,0.95,1.0,1.0,1.0,0.9,1.0
+Phi-4 14B,reduced_capability_info,1.0,0.0,0.8,0.0,0.3,0.95
+Phi-4 14B,no_capability_semantics,1.0,0.0,1.0,0.4,0.4,0.8
+Phi-4 14B,no_parameter_semantics,1.0,1.0,0.25,0.4,0.7,1.0
+Phi-4 14B,no_schema_constrained_decoding,0.95,1.0,1.0,1.0,0.85,1.0
+Gemma 3 12B,full,1.0,1.0,0.9,1.0,0.8,1.0
+Gemma 3 12B,reduced_capability_info,1.0,0.0,0.75,0.0,0.3,0.85
+Gemma 3 12B,no_capability_semantics,1.0,0.0,0.9,0.4,0.4,0.9
+Gemma 3 12B,no_parameter_semantics,1.0,0.95,0.2,0.35,0.6,1.0
+Gemma 3 12B,no_schema_constrained_decoding,1.0,1.0,0.9166666666666666,0.95,0.85,0.95
+Mistral NeMo 12B,full,0.8,0.9,1.0,0.75,0.55,0.2
+Mistral NeMo 12B,reduced_capability_info,0.8,0.0,0.8,0.0,0.23333333333333334,0.26666666666666666
+Mistral NeMo 12B,no_capability_semantics,0.9,0.15,1.0,0.4,0.36666666666666664,0.4
+Mistral NeMo 12B,no_parameter_semantics,0.85,1.0,0.25,0.3,0.45,0.3
+Mistral NeMo 12B,no_schema_constrained_decoding,0.75,0.9,1.0,0.7,0.55,0.18333333333333332

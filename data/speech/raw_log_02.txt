@@ -1,0 +1,348 @@
+[INFO] [1787644803.177825448] [g1_audio_bridge]: Silero VAD model loaded: <local-install-dir>/share/my_g1_audio/silero_vad.onnx
+[INFO] [1787644807.866543289] [g1_audio_bridge]: Faster-Whisper model loaded on CUDA (float16)
+[INFO] [1787644807.869115467] [g1_audio_bridge]: OpenCC loaded (traditional->simplified)
+[INFO] [1787644807.869744162] [g1_audio_bridge]: Ear node started, listening on 239.168.123.161:5555 (mono/16000Hz/16bit, iface=192.168.123.222)
+[INFO] [1787644834.489455651] [g1_audio_bridge]: Voice detected
+[INFO] [1787644836.726708683] [g1_audio_bridge]: Running STT... endpoint_ms=650.1
+[INFO] [1787644837.160410837] [g1_audio_bridge]: Recognized(lang=en): Enter Dumping Mode.
+[INFO] [1787644837.161759234] [g1_audio_bridge]: Latency: stt_ms=432.3, endpoint_ms=650.1, e2e_ms=1083.4
+[INFO] [1787644877.781860376] [g1_audio_bridge]: Voice detected
+[INFO] [1787644879.852844137] [g1_audio_bridge]: Running STT... endpoint_ms=635.7
+[INFO] [1787644879.939390375] [g1_audio_bridge]: Recognized(lang=en): Enter Dumping Mode.
+[INFO] [1787644879.940067449] [g1_audio_bridge]: Latency: stt_ms=85.8, endpoint_ms=635.7, e2e_ms=722.4
+[INFO] [1787644891.743512454] [g1_audio_bridge]: Voice detected
+[INFO] [1787644893.977860050] [g1_audio_bridge]: Running STT... endpoint_ms=635.3
+[INFO] [1787644894.062342323] [g1_audio_bridge]: Recognized(lang=en): Enter damping mode.
+[INFO] [1787644894.063030903] [g1_audio_bridge]: Latency: stt_ms=83.5, endpoint_ms=635.3, e2e_ms=719.7
+[INFO] [1787644942.428828243] [g1_audio_bridge]: Voice detected
+[INFO] [1787644946.435733933] [g1_audio_bridge]: Running STT... endpoint_ms=636.4
+[INFO] [1787644946.531052764] [g1_audio_bridge]: Recognized(lang=en): Shake hands with me, then introduce yourself.
+[INFO] [1787644946.531655700] [g1_audio_bridge]: Latency: stt_ms=94.5, endpoint_ms=636.4, e2e_ms=732.7
+[INFO] [1787644992.276651994] [g1_audio_bridge]: Voice detected
+[INFO] [1787644994.753545766] [g1_audio_bridge]: Running STT... endpoint_ms=651.0
+[INFO] [1787644994.845061726] [g1_audio_bridge]: Recognized(lang=en): Move forward for 2s.
+[INFO] [1787644994.846131557] [g1_audio_bridge]: Latency: stt_ms=90.9, endpoint_ms=651.0, e2e_ms=742.7
+[INFO] [1787644994.933098117] [g1_audio_bridge]: Voice detected
+[INFO] [1787644996.753759419] [g1_audio_bridge]: Running STT... endpoint_ms=635.1
+[INFO] [1787644996.815242168] [g1_audio_bridge]: Recognized(lang=en): and turn right.
+[INFO] [1787644996.815809488] [g1_audio_bridge]: Latency: stt_ms=60.6, endpoint_ms=635.1, e2e_ms=696.6
+[INFO] [1787645007.087802026] [g1_audio_bridge]: Voice detected
+[INFO] [1787645008.917253601] [g1_audio_bridge]: Running STT... endpoint_ms=649.2
+[INFO] [1787645009.563456684] [g1_audio_bridge]: Latency: stt_ms=645.0, endpoint_ms=649.2, e2e_ms=1295.0
+[INFO] [1787645012.286141922] [g1_audio_bridge]: Voice detected
+[INFO] [1787645016.593538635] [g1_audio_bridge]: Running STT... endpoint_ms=635.8
+[INFO] [1787645016.681891568] [g1_audio_bridge]: Recognized(lang=en): Move forward for 2s, then turn right.
+[INFO] [1787645016.682392020] [g1_audio_bridge]: Latency: stt_ms=87.6, endpoint_ms=635.8, e2e_ms=724.1
+[INFO] [1787645031.634688954] [g1_audio_bridge]: Voice detected
+[INFO] [1787645035.533778232] [g1_audio_bridge]: Running STT... endpoint_ms=605.1
+[INFO] [1787645035.619201226] [g1_audio_bridge]: Recognized(lang=en): Shake hands with me, then introduce yourself.
+[INFO] [1787645035.619711040] [g1_audio_bridge]: Latency: stt_ms=84.6, endpoint_ms=605.1, e2e_ms=690.9
+[INFO] [1787645064.996222950] [g1_audio_bridge]: Voice detected
+[INFO] [1787645065.962349878] [g1_audio_bridge]: Running STT... endpoint_ms=769.2
+[INFO] [1787645066.026611283] [g1_audio_bridge]: Recognized(lang=en): fly up
+[INFO] [1787645066.027244673] [g1_audio_bridge]: Latency: stt_ms=63.4, endpoint_ms=769.2, e2e_ms=834.1
+[INFO] [1787645080.246549713] [g1_audio_bridge]: Voice detected
+[INFO] [1787645081.319035819] [g1_audio_bridge]: Running STT... endpoint_ms=800.5
+[INFO] [1787645081.382713669] [g1_audio_bridge]: Recognized(lang=en): fly up
+[INFO] [1787645081.383159614] [g1_audio_bridge]: Latency: stt_ms=63.1, endpoint_ms=800.5, e2e_ms=864.4
+[INFO] [1787645104.354882409] [g1_audio_bridge]: Voice detected
+[INFO] [1787645104.989922693] [g1_audio_bridge]: Running STT... endpoint_ms=634.4
+[INFO] [1787645105.053285287] [g1_audio_bridge]: Recognized(lang=en): Turn left.
+[INFO] [1787645105.053866918] [g1_audio_bridge]: Latency: stt_ms=62.7, endpoint_ms=634.4, e2e_ms=697.8
+[INFO] [1787645105.155015162] [g1_audio_bridge]: Voice detected
+[INFO] [1787645106.743123534] [g1_audio_bridge]: Running STT... endpoint_ms=635.0
+[INFO] [1787645106.817380396] [g1_audio_bridge]: Recognized(lang=en): Careful, one-ass!
+[INFO] [1787645106.817846660] [g1_audio_bridge]: Latency: stt_ms=73.5, endpoint_ms=635.0, e2e_ms=709.8
+[INFO] [1787645107.225749150] [g1_audio_bridge]: Voice detected
+[INFO] [1787645108.041792878] [g1_audio_bridge]: Running STT... endpoint_ms=649.4
+[INFO] [1787645108.102718390] [g1_audio_bridge]: Latency: stt_ms=60.5, endpoint_ms=649.4, e2e_ms=710.4
+[INFO] [1787645134.529750842] [g1_audio_bridge]: Voice detected
+[INFO] [1787645135.482009342] [g1_audio_bridge]: Running STT... endpoint_ms=799.1
+[INFO] [1787645135.549276775] [g1_audio_bridge]: Recognized(lang=en): Move forward.
+[INFO] [1787645135.549771629] [g1_audio_bridge]: Latency: stt_ms=66.7, endpoint_ms=799.1, e2e_ms=867.3
+[INFO] [1787645148.682843129] [g1_audio_bridge]: Voice detected
+[INFO] [1787645150.313222287] [g1_audio_bridge]: Running STT... endpoint_ms=664.7
+[INFO] [1787645150.587481473] [g1_audio_bridge]: Recognized(lang=en): Move forward.
+[INFO] [1787645150.587964990] [g1_audio_bridge]: Latency: stt_ms=273.6, endpoint_ms=664.7, e2e_ms=939.0
+[INFO] [1787645171.793740141] [g1_audio_bridge]: Voice detected
+[INFO] [1787645173.380239166] [g1_audio_bridge]: Running STT... endpoint_ms=635.0
+[INFO] [1787645173.459953134] [g1_audio_bridge]: Recognized(lang=en): Move forward.
+[INFO] [1787645173.460433008] [g1_audio_bridge]: Latency: stt_ms=79.1, endpoint_ms=635.0, e2e_ms=714.7
+[INFO] [1787645197.130417532] [g1_audio_bridge]: Voice detected
+[INFO] [1787645197.962457312] [g1_audio_bridge]: Running STT... endpoint_ms=680.5
+[INFO] [1787645198.025700218] [g1_audio_bridge]: Recognized(lang=en): run around.
+[INFO] [1787645198.028971697] [g1_audio_bridge]: Latency: stt_ms=62.7, endpoint_ms=680.5, e2e_ms=744.5
+[INFO] [1787645214.894942193] [g1_audio_bridge]: Voice detected
+[INFO] [1787645215.693949973] [g1_audio_bridge]: Running STT... endpoint_ms=649.4
+[INFO] [1787645215.757750577] [g1_audio_bridge]: Recognized(lang=en): Turn around.
+[INFO] [1787645215.758220796] [g1_audio_bridge]: Latency: stt_ms=63.2, endpoint_ms=649.4, e2e_ms=713.3
+[INFO] [1787645251.337217983] [g1_audio_bridge]: Voice detected
+[INFO] [1787645253.254932201] [g1_audio_bridge]: Running STT... endpoint_ms=649.3
+[INFO] [1787645253.333993285] [g1_audio_bridge]: Recognized(lang=en): Move forward for 2S.
+[INFO] [1787645253.334700316] [g1_audio_bridge]: Latency: stt_ms=78.3, endpoint_ms=649.3, e2e_ms=728.3
+[INFO] [1787645253.336195570] [g1_audio_bridge]: Voice detected
+[INFO] [1787645257.079838839] [g1_audio_bridge]: Running STT... endpoint_ms=800.2
+[INFO] [1787645257.181010838] [g1_audio_bridge]: Recognized(lang=en): Move away your hand, then introduce yourself.
+[INFO] [1787645257.181666625] [g1_audio_bridge]: Latency: stt_ms=100.2, endpoint_ms=800.2, e2e_ms=901.5
+[INFO] [1787645269.771268693] [g1_audio_bridge]: Voice detected
+[INFO] [1787645276.003308220] [g1_audio_bridge]: Running STT... endpoint_ms=635.2
+[INFO] [1787645276.103458052] [g1_audio_bridge]: Recognized(lang=en): Move forward for 2s, wave your hand, then introduce yourself.
+[INFO] [1787645276.104038615] [g1_audio_bridge]: Latency: stt_ms=99.2, endpoint_ms=635.2, e2e_ms=735.5
+[INFO] [1787645304.642013177] [g1_audio_bridge]: Voice detected
+[INFO] [1787645308.572647191] [g1_audio_bridge]: Running STT... endpoint_ms=725.6
+[INFO] [1787645308.670614868] [g1_audio_bridge]: Recognized(lang=en): Wave your hand, then shake hands with me.
+[INFO] [1787645308.671245899] [g1_audio_bridge]: Latency: stt_ms=97.2, endpoint_ms=725.6, e2e_ms=823.6
+[INFO] [1787645356.334101664] [g1_audio_bridge]: Voice detected
+[INFO] [1787645357.149658438] [g1_audio_bridge]: Running STT... endpoint_ms=604.9
+[INFO] [1787645357.214220637] [g1_audio_bridge]: Recognized(lang=en): shake hands
+[INFO] [1787645357.214657848] [g1_audio_bridge]: Latency: stt_ms=64.0, endpoint_ms=604.9, e2e_ms=669.6
+[INFO] [1787645357.215361095] [g1_audio_bridge]: Voice detected
+[INFO] [1787645360.337215321] [g1_audio_bridge]: Running STT... endpoint_ms=650.1
+[INFO] [1787645360.417374595] [g1_audio_bridge]: Recognized(lang=en): Then introduce yourself.
+[INFO] [1787645360.417832309] [g1_audio_bridge]: Latency: stt_ms=79.5, endpoint_ms=650.1, e2e_ms=730.9
+[INFO] [1787645390.624660142] [g1_audio_bridge]: Voice detected
+[INFO] [1787645391.423680594] [g1_audio_bridge]: Running STT... endpoint_ms=798.0
+[INFO] [1787645391.501875744] [g1_audio_bridge]: Recognized(lang=en): Turn around.
+[INFO] [1787645391.502384349] [g1_audio_bridge]: Latency: stt_ms=77.5, endpoint_ms=798.0, e2e_ms=876.2
+[INFO] [1787645408.852166812] [g1_audio_bridge]: Voice detected
+[INFO] [1787645409.651968368] [g1_audio_bridge]: Running STT... endpoint_ms=634.8
+[INFO] [1787645409.737536782] [g1_audio_bridge]: Recognized(lang=en): Turn around.
+[INFO] [1787645409.738110592] [g1_audio_bridge]: Latency: stt_ms=84.9, endpoint_ms=634.8, e2e_ms=720.4
+[INFO] [1787645433.559865559] [g1_audio_bridge]: Voice detected
+[INFO] [1787645434.995655242] [g1_audio_bridge]: Running STT... endpoint_ms=649.0
+[INFO] [1787645435.087473399] [g1_audio_bridge]: Recognized(lang=zh): 左转一秒
+[INFO] [1787645435.088110639] [g1_audio_bridge]: Latency: stt_ms=90.8, endpoint_ms=649.0, e2e_ms=740.8
+[INFO] [1787645452.242598626] [g1_audio_bridge]: Voice detected
+[INFO] [1787645458.482872281] [g1_audio_bridge]: Running STT... endpoint_ms=635.0
+[INFO] [1787645458.597851510] [g1_audio_bridge]: Recognized(lang=en): Move forward for 2s, wave your hand, then introduce yourself.
+[INFO] [1787645458.598408403] [g1_audio_bridge]: Latency: stt_ms=114.0, endpoint_ms=635.0, e2e_ms=750.5
+[INFO] [1787645460.976180871] [g1_audio_bridge]: Voice detected
+[INFO] [1787645461.520420900] [g1_audio_bridge]: Running STT... endpoint_ms=542.3
+[INFO] [1787645461.576241307] [g1_audio_bridge]: Latency: stt_ms=55.1, endpoint_ms=542.3, e2e_ms=598.8
+[INFO] [1787645488.520775261] [g1_audio_bridge]: Voice detected
+[INFO] [1787645490.122958682] [g1_audio_bridge]: Running STT... endpoint_ms=650.2
+[INFO] [1787645490.198839981] [g1_audio_bridge]: Recognized(lang=en): Move forward then
+[INFO] [1787645490.199404034] [g1_audio_bridge]: Latency: stt_ms=75.2, endpoint_ms=650.2, e2e_ms=726.8
+[INFO] [1787645490.200755717] [g1_audio_bridge]: Voice detected
+[INFO] [1787645492.041057154] [g1_audio_bridge]: Running STT... endpoint_ms=635.7
+[INFO] [1787645492.095727548] [g1_audio_bridge]: Recognized(lang=en): Wave your hand.
+[INFO] [1787645492.096412964] [g1_audio_bridge]: Latency: stt_ms=54.0, endpoint_ms=635.7, e2e_ms=690.5
+[INFO] [1787645517.277164754] [g1_audio_bridge]: Voice detected
+[INFO] [1787645520.162111444] [g1_audio_bridge]: Running STT... endpoint_ms=634.7
+[INFO] [1787645520.249205476] [g1_audio_bridge]: Recognized(lang=en): Move forward then wave your hand.
+[INFO] [1787645520.249887633] [g1_audio_bridge]: Latency: stt_ms=86.3, endpoint_ms=634.7, e2e_ms=721.9
+[INFO] [1787645566.484851114] [g1_audio_bridge]: Voice detected
+[INFO] [1787645567.283647983] [g1_audio_bridge]: Running STT... endpoint_ms=797.9
+[INFO] [1787645567.370611903] [g1_audio_bridge]: Recognized(lang=en): pick up the
+[INFO] [1787645567.371262057] [g1_audio_bridge]: Latency: stt_ms=86.2, endpoint_ms=797.9, e2e_ms=885.1
+[INFO] [1787645567.480600757] [g1_audio_bridge]: Voice detected
+[INFO] [1787645569.429191581] [g1_audio_bridge]: Running STT... endpoint_ms=799.7
+[INFO] [1787645569.520496194] [g1_audio_bridge]: Recognized(lang=en): Pottle and the table
+[INFO] [1787645569.521102947] [g1_audio_bridge]: Latency: stt_ms=90.4, endpoint_ms=799.7, e2e_ms=891.5
+[INFO] [1787645599.565293076] [g1_audio_bridge]: Voice detected
+[INFO] [1787645603.287768153] [g1_audio_bridge]: Running STT... endpoint_ms=604.8
+[INFO] [1787645603.373401062] [g1_audio_bridge]: Recognized(lang=en): Wave your hand, then shake hands with me.
+[INFO] [1787645603.373952393] [g1_audio_bridge]: Latency: stt_ms=84.8, endpoint_ms=604.8, e2e_ms=690.5
+[INFO] [1787645605.525749410] [g1_audio_bridge]: Voice detected
+[INFO] [1787645606.340978662] [g1_audio_bridge]: Running STT... endpoint_ms=649.9
+[INFO] [1787645606.398201489] [g1_audio_bridge]: Latency: stt_ms=56.4, endpoint_ms=649.9, e2e_ms=707.5
+[INFO] [1787645606.976105383] [g1_audio_bridge]: Voice detected
+[INFO] [1787645607.611630424] [g1_audio_bridge]: Running STT... endpoint_ms=634.4
+[INFO] [1787645607.740053902] [g1_audio_bridge]: Latency: stt_ms=127.8, endpoint_ms=634.4, e2e_ms=762.9
+[INFO] [1787645645.150443022] [g1_audio_bridge]: Voice detected
+[INFO] [1787645648.036198240] [g1_audio_bridge]: Running STT... endpoint_ms=649.5
+[INFO] [1787645648.120438498] [g1_audio_bridge]: Recognized(lang=en): Move forward, then wave your hand.
+[INFO] [1787645648.121054496] [g1_audio_bridge]: Latency: stt_ms=83.2, endpoint_ms=649.5, e2e_ms=734.0
+[INFO] [1787645672.269498963] [g1_audio_bridge]: Voice detected
+[INFO] [1787645675.169121102] [g1_audio_bridge]: Running STT... endpoint_ms=650.1
+[INFO] [1787645675.260765906] [g1_audio_bridge]: Recognized(lang=en): Pick up the bottle on the table.
+[INFO] [1787645675.261468363] [g1_audio_bridge]: Latency: stt_ms=90.4, endpoint_ms=650.1, e2e_ms=741.5
+[INFO] [1787645711.594834076] [g1_audio_bridge]: Voice detected
+[INFO] [1787645712.714337783] [g1_audio_bridge]: Running STT... endpoint_ms=634.9
+[INFO] [1787645712.779944133] [g1_audio_bridge]: Recognized(lang=en): Turn around.
+[INFO] [1787645712.780411385] [g1_audio_bridge]: Latency: stt_ms=64.8, endpoint_ms=634.9, e2e_ms=701.1
+[INFO] [1787645732.710543123] [g1_audio_bridge]: Voice detected
+[INFO] [1787645734.145729961] [g1_audio_bridge]: Running STT... endpoint_ms=635.5
+[INFO] [1787645734.227492512] [g1_audio_bridge]: Recognized(lang=en): Move forward then
+[INFO] [1787645734.228099241] [g1_audio_bridge]: Latency: stt_ms=81.0, endpoint_ms=635.5, e2e_ms=717.5
+[INFO] [1787645734.229077312] [g1_audio_bridge]: Voice detected
+[INFO] [1787645736.111578621] [g1_audio_bridge]: Running STT... endpoint_ms=679.7
+[INFO] [1787645736.193234235] [g1_audio_bridge]: Recognized(lang=en): Move away from your hand.
+[INFO] [1787645736.193802092] [g1_audio_bridge]: Latency: stt_ms=80.8, endpoint_ms=679.7, e2e_ms=761.4
+[INFO] [1787645750.000013007] [g1_audio_bridge]: Voice detected
+[INFO] [1787645750.800000368] [g1_audio_bridge]: Running STT... endpoint_ms=798.2
+[INFO] [1787645750.885063625] [g1_audio_bridge]: Latency: stt_ms=84.3, endpoint_ms=798.2, e2e_ms=883.6
+[INFO] [1787645768.316576498] [g1_audio_bridge]: Voice detected
+[INFO] [1787645770.677807394] [g1_audio_bridge]: Running STT... endpoint_ms=637.6
+[INFO] [1787645770.776996165] [g1_audio_bridge]: Recognized(lang=en): Move forward for 2s.
+[INFO] [1787645770.777584787] [g1_audio_bridge]: Latency: stt_ms=98.3, endpoint_ms=637.6, e2e_ms=736.8
+[INFO] [1787645770.842649020] [g1_audio_bridge]: Voice detected
+[INFO] [1787645772.597026721] [g1_audio_bridge]: Running STT... endpoint_ms=635.6
+[INFO] [1787645772.653086582] [g1_audio_bridge]: Recognized(lang=en): and turn right.
+[INFO] [1787645772.653706867] [g1_audio_bridge]: Latency: stt_ms=55.3, endpoint_ms=635.6, e2e_ms=691.7
+[INFO] [1787645796.486945216] [g1_audio_bridge]: Voice detected
+[INFO] [1787645797.756697621] [g1_audio_bridge]: Running STT... endpoint_ms=633.9
+[INFO] [1787645797.847212528] [g1_audio_bridge]: Recognized(lang=en): left for 1S.
+[INFO] [1787645797.847856915] [g1_audio_bridge]: Latency: stt_ms=89.8, endpoint_ms=633.9, e2e_ms=724.9
+[INFO] [1787645807.541468441] [g1_audio_bridge]: Voice detected
+[INFO] [1787645808.569048584] [g1_audio_bridge]: Running STT... endpoint_ms=860.3
+[INFO] [1787645809.003417576] [g1_audio_bridge]: Latency: stt_ms=433.1, endpoint_ms=860.3, e2e_ms=1295.0
+[INFO] [1787645811.544179059] [g1_audio_bridge]: Voice detected
+[INFO] [1787645812.224412468] [g1_audio_bridge]: Running STT... endpoint_ms=678.8
+[INFO] [1787645812.275680463] [g1_audio_bridge]: Latency: stt_ms=50.1, endpoint_ms=678.8, e2e_ms=729.9
+[INFO] [1787645813.024958381] [g1_audio_bridge]: Voice detected
+[INFO] [1787645814.144138063] [g1_audio_bridge]: Running STT... endpoint_ms=635.6
+[INFO] [1787645814.258851656] [g1_audio_bridge]: Latency: stt_ms=114.1, endpoint_ms=635.6, e2e_ms=750.8
+[INFO] [1787645826.493510350] [g1_audio_bridge]: Voice detected
+[INFO] [1787645832.734319029] [g1_audio_bridge]: Running STT... endpoint_ms=650.3
+[INFO] [1787645832.814062563] [g1_audio_bridge]: Recognized(lang=en): Move forward for 2S. Wave your hand. Then introduce yourself.
+[INFO] [1787645832.814583353] [g1_audio_bridge]: Latency: stt_ms=78.9, endpoint_ms=650.3, e2e_ms=730.2
+[INFO] [1787645850.713528558] [g1_audio_bridge]: Voice detected
+[INFO] [1787645852.857480975] [g1_audio_bridge]: Running STT... endpoint_ms=798.9
+[INFO] [1787645852.944151370] [g1_audio_bridge]: Recognized(lang=en): Enter Damping Mode.
+[INFO] [1787645852.954671440] [g1_audio_bridge]: Latency: stt_ms=85.9, endpoint_ms=798.9, e2e_ms=885.9
+[INFO] [1787730060.199702659] [g1_audio_bridge]: Voice detected
+[INFO] [1787730061.303525189] [g1_audio_bridge]: Running STT... endpoint_ms=635.2
+[INFO] [1787730061.779279787] [g1_audio_bridge]: STT dropped non zh/en (lang=ko, lang_prob=0.369384765625): '여기 콧뚜껑을 넣어줘요.'
+[INFO] [1787730061.779859090] [g1_audio_bridge]: Latency: stt_ms=474.7, endpoint_ms=635.2, e2e_ms=1111.8
+[INFO] [1787730061.782943176] [g1_audio_bridge]: Voice detected
+[INFO] [1787730063.070470496] [g1_audio_bridge]: Running STT... endpoint_ms=649.3
+[INFO] [1787730063.152766264] [g1_audio_bridge]: Latency: stt_ms=81.5, endpoint_ms=649.3, e2e_ms=731.7
+[INFO] [1787730064.202634938] [g1_audio_bridge]: Voice detected
+[INFO] [1787730066.120942008] [g1_audio_bridge]: Running STT... endpoint_ms=649.0
+[INFO] [1787730066.782391045] [g1_audio_bridge]: Latency: stt_ms=660.1, endpoint_ms=649.0, e2e_ms=1310.2
+[INFO] [1787730066.784449220] [g1_audio_bridge]: Voice detected
+[INFO] [1787730066.921385501] [g1_audio_bridge]: Running STT... endpoint_ms=135.8
+[INFO] [1787730066.988593281] [g1_audio_bridge]: Recognized(lang=en): Thank you. Thank you.
+[INFO] [1787730066.989223294] [g1_audio_bridge]: Latency: stt_ms=66.6, endpoint_ms=135.8, e2e_ms=203.1
+[INFO] [1787730066.990302091] [g1_audio_bridge]: Voice detected
+[INFO] [1787730067.752655940] [g1_audio_bridge]: Running STT... endpoint_ms=679.9
+[INFO] [1787730067.820749493] [g1_audio_bridge]: Latency: stt_ms=67.5, endpoint_ms=679.9, e2e_ms=748.3
+[INFO] [1787730070.909166893] [g1_audio_bridge]: Voice detected
+[INFO] [1787730071.875439814] [g1_audio_bridge]: Running STT... endpoint_ms=634.8
+[INFO] [1787730071.969091506] [g1_audio_bridge]: STT dropped low language confidence (lang=en, lang_prob=0.20703125)
+[INFO] [1787730071.969531076] [g1_audio_bridge]: Latency: stt_ms=92.9, endpoint_ms=634.8, e2e_ms=729.8
+[INFO] [1787730072.026806887] [g1_audio_bridge]: Voice detected
+[INFO] [1787730072.827149397] [g1_audio_bridge]: Running STT... endpoint_ms=635.2
+[INFO] [1787730072.900584005] [g1_audio_bridge]: Latency: stt_ms=72.6, endpoint_ms=635.2, e2e_ms=709.3
+[INFO] [1787730074.109983846] [g1_audio_bridge]: Voice detected
+[INFO] [1787730075.772022529] [g1_audio_bridge]: Running STT... endpoint_ms=634.7
+[INFO] [1787730076.032885339] [g1_audio_bridge]: Recognized(lang=zh): 他们两个都要死我了
+[INFO] [1787730076.033328493] [g1_audio_bridge]: Latency: stt_ms=259.7, endpoint_ms=634.7, e2e_ms=895.9
+[INFO] [1787730076.034715641] [g1_audio_bridge]: Voice detected
+[INFO] [1787730077.207134246] [g1_audio_bridge]: Running STT... endpoint_ms=635.7
+[INFO] [1787730077.287575715] [g1_audio_bridge]: Latency: stt_ms=79.4, endpoint_ms=635.7, e2e_ms=715.9
+[INFO] [1787730077.289591555] [g1_audio_bridge]: Voice detected
+[INFO] [1787730078.188956350] [g1_audio_bridge]: Running STT... endpoint_ms=739.0
+[INFO] [1787730078.267832073] [g1_audio_bridge]: Latency: stt_ms=78.0, endpoint_ms=739.0, e2e_ms=818.6
+[INFO] [1787730080.092391131] [g1_audio_bridge]: Voice detected
+[INFO] [1787730081.419992829] [g1_audio_bridge]: Running STT... endpoint_ms=649.5
+[INFO] [1787730081.512156150] [g1_audio_bridge]: STT dropped low language confidence (lang=en, lang_prob=0.313232421875)
+[INFO] [1787730081.512636905] [g1_audio_bridge]: Latency: stt_ms=91.3, endpoint_ms=649.5, e2e_ms=742.4
+[INFO] [1787730081.571188451] [g1_audio_bridge]: Voice detected
+[INFO] [1787730082.989481214] [g1_audio_bridge]: Running STT... endpoint_ms=754.5
+[INFO] [1787730083.094138140] [g1_audio_bridge]: STT dropped low language confidence (lang=en, lang_prob=0.1976318359375)
+[INFO] [1787730083.094467685] [g1_audio_bridge]: Latency: stt_ms=104.1, endpoint_ms=754.5, e2e_ms=859.8
+[INFO] [1787730083.564791068] [g1_audio_bridge]: Voice detected
+[INFO] [1787730084.515987194] [g1_audio_bridge]: Running STT... endpoint_ms=634.8
+[INFO] [1787730084.591514959] [g1_audio_bridge]: Latency: stt_ms=74.8, endpoint_ms=634.8, e2e_ms=710.8
+[INFO] [1787730085.844953272] [g1_audio_bridge]: Voice detected
+[INFO] [1787730086.644968790] [g1_audio_bridge]: Running STT... endpoint_ms=634.4
+[INFO] [1787730086.710758472] [g1_audio_bridge]: Latency: stt_ms=64.8, endpoint_ms=634.4, e2e_ms=699.9
+[INFO] [1787730086.811108815] [g1_audio_bridge]: Voice detected
+[INFO] [1787730087.446190411] [g1_audio_bridge]: Running STT... endpoint_ms=634.1
+[INFO] [1787730087.521400180] [g1_audio_bridge]: Recognized(lang=en): Thank you very much.
+[INFO] [1787730087.522032673] [g1_audio_bridge]: Latency: stt_ms=74.6, endpoint_ms=634.1, e2e_ms=709.4
+[INFO] [1787730088.730684895] [g1_audio_bridge]: Voice detected
+[INFO] [1787730089.788110579] [g1_audio_bridge]: Running STT... endpoint_ms=799.5
+[INFO] [1787730090.784656469] [g1_audio_bridge]: STT dropped non zh/en (lang=ja, lang_prob=0.10296630859375): 'さて、やっぱり、やっぱり、やっぱり…'
+[INFO] [1787730090.785178206] [g1_audio_bridge]: Latency: stt_ms=995.6, endpoint_ms=799.5, e2e_ms=1797.4
+[INFO] [1787730091.285835985] [g1_audio_bridge]: Voice detected
+[INFO] [1787730092.087402365] [g1_audio_bridge]: Running STT... endpoint_ms=634.4
+[INFO] [1787730092.155119643] [g1_audio_bridge]: Recognized(lang=en): I won't put it in.
+[INFO] [1787730092.155644570] [g1_audio_bridge]: Latency: stt_ms=67.1, endpoint_ms=634.4, e2e_ms=702.7
+[INFO] [1787730092.433320126] [g1_audio_bridge]: Voice detected
+[INFO] [1787730094.184778095] [g1_audio_bridge]: Running STT... endpoint_ms=559.7
+[INFO] [1787730094.693725404] [g1_audio_bridge]: STT dropped non zh/en (lang=ko, lang_prob=0.16650390625): '아깝은 것 같긴 했지?'
+[INFO] [1787730094.694655492] [g1_audio_bridge]: Latency: stt_ms=507.7, endpoint_ms=559.7, e2e_ms=1069.4
+[INFO] [1787730094.696518136] [g1_audio_bridge]: Voice detected
+[INFO] [1787730095.152671722] [g1_audio_bridge]: Running STT... endpoint_ms=454.0
+[INFO] [1787730095.217529566] [g1_audio_bridge]: Latency: stt_ms=64.2, endpoint_ms=454.0, e2e_ms=518.7
+[INFO] [1787730095.302505749] [g1_audio_bridge]: Voice detected
+[INFO] [1787730096.103742659] [g1_audio_bridge]: Running STT... endpoint_ms=634.8
+[INFO] [1787730096.162190902] [g1_audio_bridge]: Latency: stt_ms=57.8, endpoint_ms=634.8, e2e_ms=693.3
+[INFO] [1787730099.475135026] [g1_audio_bridge]: Voice detected
+[INFO] [1787730100.442519569] [g1_audio_bridge]: Running STT... endpoint_ms=784.9
+[INFO] [1787730100.512238895] [g1_audio_bridge]: STT dropped low language confidence (lang=en, lang_prob=0.224365234375)
+[INFO] [1787730100.512674602] [g1_audio_bridge]: Latency: stt_ms=69.0, endpoint_ms=784.9, e2e_ms=855.7
+[INFO] [1787730100.513936870] [g1_audio_bridge]: Voice detected
+[INFO] [1787730104.583188633] [g1_audio_bridge]: Running STT... endpoint_ms=634.7
+[INFO] [1787730105.222416828] [g1_audio_bridge]: STT dropped low language confidence (lang=zh, lang_prob=0.292236328125)
+[INFO] [1787730105.223400963] [g1_audio_bridge]: Latency: stt_ms=637.9, endpoint_ms=634.7, e2e_ms=1274.7
+[INFO] [1787730502.694545159] [g1_audio_bridge]: Voice detected
+[INFO] [1787730503.509291456] [g1_audio_bridge]: Running STT... endpoint_ms=604.5
+[INFO] [1787730503.757974436] [g1_audio_bridge]: STT dropped non zh/en (lang=ja, lang_prob=0.498779296875): 'ほうで水づきます。'
+[INFO] [1787730503.758507449] [g1_audio_bridge]: Latency: stt_ms=247.8, endpoint_ms=604.5, e2e_ms=853.8
+[INFO] [1787730504.297080045] [g1_audio_bridge]: Voice detected
+[INFO] [1787730506.214738977] [g1_audio_bridge]: Running STT... endpoint_ms=784.0
+[INFO] [1787730506.496233617] [g1_audio_bridge]: Recognized(lang=zh): 你只剩下,你放下,你只剩下
+[INFO] [1787730506.496922919] [g1_audio_bridge]: Latency: stt_ms=280.1, endpoint_ms=784.0, e2e_ms=1065.5
+[INFO] [1787730507.654821067] [g1_audio_bridge]: Voice detected
+[INFO] [1787730508.863731650] [g1_audio_bridge]: Running STT... endpoint_ms=695.0
+[INFO] [1787730508.930818776] [g1_audio_bridge]: STT dropped low language confidence (lang=en, lang_prob=0.2003173828125)
+[INFO] [1787730508.931291483] [g1_audio_bridge]: Latency: stt_ms=66.3, endpoint_ms=695.0, e2e_ms=763.3
+[INFO] [1787730518.729552744] [g1_audio_bridge]: Voice detected
+[INFO] [1787730519.891945683] [g1_audio_bridge]: Running STT... endpoint_ms=695.9
+[INFO] [1787730520.659996119] [g1_audio_bridge]: STT dropped non zh/en (lang=fr, lang_prob=0.390625): '3, 2, 3, 2, 3, 2, 3, 2, 3.'
+[INFO] [1787730520.660485465] [g1_audio_bridge]: Latency: stt_ms=767.1, endpoint_ms=695.9, e2e_ms=1464.9
+[INFO] [1787730520.665864660] [g1_audio_bridge]: Voice detected
+[INFO] [1787730522.248440338] [g1_audio_bridge]: Running STT... endpoint_ms=649.4
+[INFO] [1787730522.323441730] [g1_audio_bridge]: STT dropped low language confidence (lang=en, lang_prob=0.28369140625)
+[INFO] [1787730522.324102163] [g1_audio_bridge]: Latency: stt_ms=74.3, endpoint_ms=649.4, e2e_ms=725.1
+[INFO] [1787730522.746405740] [g1_audio_bridge]: Voice detected
+[INFO] [1787730524.001984814] [g1_audio_bridge]: Running STT... endpoint_ms=635.5
+[INFO] [1787730524.081860157] [g1_audio_bridge]: Latency: stt_ms=79.1, endpoint_ms=635.5, e2e_ms=715.4
+[INFO] [1787730524.967739481] [g1_audio_bridge]: Voice detected
+[INFO] [1787730525.754027459] [g1_audio_bridge]: Running STT... endpoint_ms=784.6
+[INFO] [1787730525.831882305] [g1_audio_bridge]: Latency: stt_ms=77.1, endpoint_ms=784.6, e2e_ms=862.6
+[INFO] [1787730526.404686815] [g1_audio_bridge]: Voice detected
+[INFO] [1787730527.205678068] [g1_audio_bridge]: Running STT... endpoint_ms=635.0
+[INFO] [1787730527.270361629] [g1_audio_bridge]: STT dropped low language confidence (lang=en, lang_prob=0.331787109375)
+[INFO] [1787730527.270858652] [g1_audio_bridge]: Latency: stt_ms=63.6, endpoint_ms=635.0, e2e_ms=700.3
+[INFO] [1787730527.271914742] [g1_audio_bridge]: Voice detected
+[INFO] [1787730528.344905277] [g1_audio_bridge]: Running STT... endpoint_ms=656.1
+[INFO] [1787730528.396349538] [g1_audio_bridge]: Latency: stt_ms=50.8, endpoint_ms=656.1, e2e_ms=707.7
+[INFO] [1787730528.397380467] [g1_audio_bridge]: Voice detected
+[INFO] [1787730529.114335995] [g1_audio_bridge]: Running STT... endpoint_ms=574.7
+[INFO] [1787730529.166577010] [g1_audio_bridge]: Latency: stt_ms=51.8, endpoint_ms=574.7, e2e_ms=627.2
+[INFO] [1787730530.080951797] [g1_audio_bridge]: Voice detected
+[INFO] [1787730532.847473978] [g1_audio_bridge]: Running STT... endpoint_ms=681.0
+[INFO] [1787730533.273797675] [g1_audio_bridge]: Recognized(lang=zh): 一眼熟练,阿,我会对一眼熟练,对。
+[INFO] [1787730533.274304272] [g1_audio_bridge]: Latency: stt_ms=425.6, endpoint_ms=681.0, e2e_ms=1107.5
+[INFO] [1787730533.275417107] [g1_audio_bridge]: Voice detected
+[INFO] [1787730534.095102661] [g1_audio_bridge]: Running STT... endpoint_ms=649.7
+[INFO] [1787730534.157783626] [g1_audio_bridge]: Recognized(lang=en): That's how it's doing.
+[INFO] [1787730534.158285687] [g1_audio_bridge]: Latency: stt_ms=62.0, endpoint_ms=649.7, e2e_ms=712.7
+[INFO] [1787730534.564833657] [g1_audio_bridge]: Voice detected
+[INFO] [1787730535.998787486] [g1_audio_bridge]: Running STT... endpoint_ms=634.4
+[INFO] [1787730536.060237821] [g1_audio_bridge]: Latency: stt_ms=60.7, endpoint_ms=634.4, e2e_ms=696.0
+[INFO] [1787730536.798707869] [g1_audio_bridge]: Voice detected
+[INFO] [1787730537.448400387] [g1_audio_bridge]: Running STT... endpoint_ms=648.9
+[INFO] [1787730537.699149426] [g1_audio_bridge]: STT dropped low language confidence (lang=en, lang_prob=0.28857421875)
+[INFO] [1787730537.700109056] [g1_audio_bridge]: Latency: stt_ms=249.4, endpoint_ms=648.9, e2e_ms=900.3
+[INFO] [1787730538.249891235] [g1_audio_bridge]: Voice detected
+[INFO] [1787730539.081423262] [g1_audio_bridge]: Running STT... endpoint_ms=681.2
+[INFO] [1787730539.140723204] [g1_audio_bridge]: Recognized(lang=en): One, two, three.
+[INFO] [1787730539.141886095] [g1_audio_bridge]: Latency: stt_ms=58.7, endpoint_ms=681.2, e2e_ms=740.6
+[INFO] [1787730540.050106257] [g1_audio_bridge]: Voice detected
+[INFO] [1787730541.002292759] [g1_audio_bridge]: Running STT... endpoint_ms=635.2
+[INFO] [1787730541.204250333] [g1_audio_bridge]: Recognized(lang=zh): 即使有三号
+[INFO] [1787730541.204714130] [g1_audio_bridge]: Latency: stt_ms=201.3, endpoint_ms=635.2, e2e_ms=837.5
+[INFO] [1787730544.841607915] [g1_audio_bridge]: Voice detected
+[INFO] [1787730545.658120903] [g1_audio_bridge]: Running STT... endpoint_ms=650.8
+[INFO] [1787730545.876740502] [g1_audio_bridge]: STT dropped low language confidence (lang=en, lang_prob=0.2442626953125)
+[INFO] [1787730545.877033603] [g1_audio_bridge]: Latency: stt_ms=218.0, endpoint_ms=650.8, e2e_ms=870.3
+[INFO] [1787730545.960399238] [g1_audio_bridge]: Voice detected
+[INFO] [1787730548.213323207] [g1_audio_bridge]: Running STT... endpoint_ms=604.4
+[INFO] [1787730548.314796707] [g1_audio_bridge]: Recognized(lang=en): Have you watched this video? No, I'm sitting in front of you.
+[INFO] [1787730548.324199497] [g1_audio_bridge]: Latency: stt_ms=100.6, endpoint_ms=604.4, e2e_ms=706.3

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "G1 Planning Benchmark Task Specification",
+  "type": "object",
+  "required": [
+    "task_id",
+    "family",
+    "canonical_instruction",
+    "paraphrase_instruction",
+    "expected_outcome",
+    "required_steps",
+    "temporal_constraints",
+    "allow_extra_steps",
+    "requires_refusal_speech"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string"
+    },
+    "family": {
+      "type": "string"
+    },
+    "canonical_instruction": {
+      "type": "string"
+    },
+    "paraphrase_instruction": {
+      "type": "string"
+    },
+    "expected_outcome": {
+      "enum": [
+        "execute",
+        "non_execution"
+      ]
+    },
+    "required_steps": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "temporal_constraints": {
+      "type": "array"
+    },
+    "allow_extra_steps": {
+      "type": "boolean"
+    },
+    "requires_refusal_speech": {
+      "type": "boolean",
+      "description": "Schema-compatible field. v1.1 P6 planning success does not use refusal-keyword matching."
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

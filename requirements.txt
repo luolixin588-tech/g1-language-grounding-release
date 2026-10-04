@@ -1,0 +1,5 @@
+# Reproduction of published statistics from released records uses the
+# Python 3.8 standard library only.
+# The following extra is required only if you re-run the planner against
+# a local Ollama server (model weights are not redistributed).
+requests>=2.28.0

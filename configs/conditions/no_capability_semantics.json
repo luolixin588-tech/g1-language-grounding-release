@@ -1,0 +1,13 @@
+{
+  "name": "no_capability_semantics",
+  "description": "Planner-visible capability semantics are anonymized while execution identities remain unchanged internally.",
+  "model": "qwen2.5:14b",
+  "temperature": 0,
+  "use_json_schema": true,
+  "use_validation_retries": true,
+  "max_attempts": 3,
+  "reduced_capability_info": false,
+  "anonymize_capability_semantics": true,
+  "anonymize_parameter_semantics": false,
+  "alias_permutation_id": 0
+}

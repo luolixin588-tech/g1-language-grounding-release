@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+credentials*
+**/secrets*
+**/*api_key*
+**/*.pem
+
+# Model weights and local LLM artifacts (not redistributed)
+*.gguf
+*.ggml
+*.bin
+*.pt
+*.pth
+*.onnx
+*.safetensors
+.ollama/
+models/
+
+# ROS / Linux
+.ros/
+log/
+logs/
+*.bag
+*.bag.active
+build/
+install/
+devel/
+.catkin_workspace
+COLCON_IGNORE
+
+# Editors / OS
+.idea/
+.vscode/
+.cursor/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Large temporary outputs
+*.tmp
+*.temp
+raw_outputs.jsonl
+_smoke/

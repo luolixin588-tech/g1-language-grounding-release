@@ -1,0 +1,87 @@
+{
+  "benchmark_version": "v1.1",
+  "condition": {
+    "name": "no_capability_semantics",
+    "description": "Planner-visible capability semantics are anonymized while execution identities remain unchanged internally.",
+    "model": "qwen2.5:14b",
+    "temperature": 0,
+    "use_json_schema": true,
+    "use_validation_retries": true,
+    "max_attempts": 3,
+    "reduced_capability_info": false,
+    "anonymize_capability_semantics": true,
+    "anonymize_parameter_semantics": false,
+    "alias_permutation_id": 0
+  },
+  "n_jobs": 360,
+  "n_instructions": 120,
+  "n_repeats": 3,
+  "seed": 0,
+  "smoke": false,
+  "alias_meta": {
+    "alias_permutation_id": 0,
+    "capability": {
+      "A01": {
+        "action_id": 11,
+        "action_name": "double_hand_flying_kiss"
+      },
+      "A02": {
+        "action_id": 12,
+        "action_name": "single_hand_flying_kiss"
+      },
+      "A03": {
+        "action_id": 15,
+        "action_name": "arms_horizontal"
+      },
+      "A04": {
+        "action_id": 17,
+        "action_name": "clap"
+      },
+      "A05": {
+        "action_id": 18,
+        "action_name": "high_five"
+      },
+      "A06": {
+        "action_id": 19,
+        "action_name": "hug"
+      },
+      "A07": {
+        "action_id": 20,
+        "action_name": "double_heart"
+      },
+      "A08": {
+        "action_id": 21,
+        "action_name": "right_hand_heart"
+      },
+      "A09": {
+        "action_id": 22,
+        "action_name": "double_x"
+      },
+      "A10": {
+        "action_id": 23,
+        "action_name": "right_arm_horizontal"
+      },
+      "A11": {
+        "action_id": 24,
+        "action_name": "kamehameha"
+      },
+      "A12": {
+        "action_id": 25,
+        "action_name": "chest_wave"
+      },
+      "A13": {
+        "action_id": 26,
+        "action_name": "overhead_wave"
+      },
+      "A14": {
+        "action_id": 27,
+        "action_name": "handshake"
+      },
+      "A15": {
+        "action_id": 99,
+        "action_name": "reset_arm_pose"
+      }
+    },
+    "parameter": null
+  }
+}

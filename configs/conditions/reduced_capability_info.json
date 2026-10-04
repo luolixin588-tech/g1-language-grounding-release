@@ -1,0 +1,10 @@
+{
+  "name": "reduced_capability_info",
+  "description": "Structured generation with names-only capability information.",
+  "model": "qwen2.5:14b",
+  "temperature": 0,
+  "use_json_schema": true,
+  "use_validation_retries": true,
+  "max_attempts": 3,
+  "reduced_capability_info": true
+}

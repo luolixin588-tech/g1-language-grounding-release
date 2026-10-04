@@ -1,0 +1,5 @@
+model,before_erroneous_dispatch_rate,after_erroneous_dispatch_rate,valid_pass_rate,false_block_rate
+Qwen2.5,0.333333,0,0.975,0.025
+Phi-4,0,0,0.975,0.025
+Gemma 3,0,0,0.9746835443,0.0253164557
+Mistral NeMo,0.8,0,0.975,0.025

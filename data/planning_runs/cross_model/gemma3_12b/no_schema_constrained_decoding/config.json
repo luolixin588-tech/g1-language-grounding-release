@@ -1,0 +1,70 @@
+{
+  "benchmark_version": "v1.1",
+  "condition": {
+    "name": "no_structure",
+    "description": "No JSON-schema constrained decoding. Same catalog text. Validation retries still parse JSON if present.",
+    "model": "qwen2.5:14b",
+    "temperature": 0,
+    "use_json_schema": false,
+    "use_validation_retries": true,
+    "max_attempts": 3,
+    "reduced_capability_info": false
+  },
+  "model_override": "gemma3:12b",
+  "n_jobs": 360,
+  "n_instructions": 120,
+  "n_repeats": 3,
+  "seed": 0,
+  "smoke": false,
+  "experiment_metadata": {
+    "model_display_name": "Gemma 3 12B",
+    "ollama_tag": "gemma3:12b",
+    "exact_model_digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+    "parameter_size": "12.2B",
+    "quantization": "Q4_K_M",
+    "ollama_version": "0.13.2",
+    "temperature": 0.0,
+    "seed": 0,
+    "benchmark_version": "v1.1",
+    "condition": "no_schema_constrained_decoding",
+    "repeats": 3,
+    "smoke": false,
+    "gpu": {
+      "nvidia_smi": [
+        "NVIDIA GeForce RTX 4090, 24564 MiB, 20791 MiB, 570.133.07"
+      ],
+      "query_ok": true
+    },
+    "git_commit_hash": null,
+    "timestamp": "2026-09-04T09:09:00.774422+00:00",
+    "schema_enabled": false,
+    "endpoint": "http://127.0.0.1:11434/api/chat",
+    "ollama_model_info": {
+      "ollama_tag": "gemma3:12b",
+      "present": true,
+      "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+      "parameter_size": "12.2B",
+      "quantization": "Q4_K_M",
+      "family": "gemma3",
+      "modified_at": "2026-09-04T16:07:41.824892053+08:00",
+      "size": 8149190253,
+      "show_parameter_size": "12.2B",
+      "show_quantization": "Q4_K_M",
+      "show_family": "gemma3",
+      "show_format": "gguf"
+    },
+    "condition_flags": {
+      "use_json_schema": false,
+      "use_validation_retries": true,
+      "max_attempts": 3,
+      "anonymize_capability_semantics": false,
+      "anonymize_parameter_semantics": false,
+      "reduced_capability_info": false
+    },
+    "prompt_sha256": "d821e88119213b4d4d131a6aecdd4c502645ce5eece5ff06709b25583dc3b72a",
+    "capability_catalog_sha256": "2065a01fcda66014f1be146461ccbe003dbdb3d6a5ec9b94e39ead866858a2af",
+    "dataset_instructions_sha256": "542ab196740f39eaad7eaf2cacdebdf3d3f62f77ff1a1b71e5955578be4a4d89",
+    "schema_sha256": "schema_disabled",
+    "evaluator_sha256": "53a24a9be1f17bd377aff0e614fc209e0d2899b1d8aa6d6ccbc92f7ff89af938"
+  }
+}

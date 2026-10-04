@@ -1,0 +1,36 @@
+{
+  "benchmark_version": "v1.1",
+  "condition": {
+    "name": "no_parameter_semantics",
+    "description": "Planner-visible parameter semantics are anonymized while parameter structure remains unchanged internally.",
+    "model": "qwen2.5:14b",
+    "temperature": 0,
+    "use_json_schema": true,
+    "use_validation_retries": true,
+    "max_attempts": 3,
+    "reduced_capability_info": false,
+    "anonymize_capability_semantics": false,
+    "anonymize_parameter_semantics": true,
+    "alias_permutation_id": 0
+  },
+  "n_jobs": 360,
+  "n_instructions": 120,
+  "n_repeats": 3,
+  "seed": 0,
+  "smoke": false,
+  "alias_meta": {
+    "alias_permutation_id": 0,
+    "capability": null,
+    "parameter": {
+      "D01": "forward",
+      "D02": "backward",
+      "D03": "left_strafe",
+      "D04": "right_strafe",
+      "D05": "turn_left",
+      "D06": "turn_right",
+      "D07": "stand_up",
+      "D08": "damp",
+      "D09": "start"
+    }
+  }
+}

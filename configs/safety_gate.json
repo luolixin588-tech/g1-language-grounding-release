@@ -1,0 +1,142 @@
+{
+  "version": "v1.0",
+  "description": "Fixed capability aliases derived from configs/capability_catalog.json v1.1 registered physical capabilities. Not tuned on benchmark outcomes.",
+  "source_catalog": "configs/capability_catalog.json",
+  "matching": {
+    "case_insensitive": true,
+    "word_boundary": true
+  },
+  "capability_aliases": {
+    "arm_action:double_hand_flying_kiss": [
+      "double hand flying kiss",
+      "double-hand flying-kiss",
+      "flying kiss",
+      "blow a kiss"
+    ],
+    "arm_action:single_hand_flying_kiss": [
+      "single hand flying kiss",
+      "single-hand flying-kiss"
+    ],
+    "arm_action:arms_horizontal": [
+      "arms horizontal",
+      "arm horizontal"
+    ],
+    "arm_action:clap": [
+      "clap",
+      "applause",
+      "round of applause"
+    ],
+    "arm_action:high_five": [
+      "high five",
+      "high-five"
+    ],
+    "arm_action:hug": [
+      "hug gesture",
+      "hug"
+    ],
+    "arm_action:double_heart": [
+      "double heart",
+      "two-handed heart",
+      "heart with both hands"
+    ],
+    "arm_action:right_hand_heart": [
+      "right hand heart",
+      "one-handed heart",
+      "heart with your right hand"
+    ],
+    "arm_action:double_x": [
+      "double x",
+      "double-x",
+      "x gesture"
+    ],
+    "arm_action:right_arm_horizontal": [
+      "right arm horizontal"
+    ],
+    "arm_action:kamehameha": [
+      "kamehameha"
+    ],
+    "arm_action:chest_wave": [
+      "chest wave",
+      "chest-level wave",
+      "wave at chest",
+      "small wave at chest"
+    ],
+    "arm_action:overhead_wave": [
+      "overhead wave",
+      "high wave",
+      "wave above",
+      "hand raised overhead",
+      "wave with your hand raised overhead"
+    ],
+    "arm_action:handshake": [
+      "handshake",
+      "shake hand",
+      "shake hands",
+      "shake my hand"
+    ],
+    "arm_action:reset_arm_pose": [
+      "reset arm pose",
+      "reset arm"
+    ],
+    "locomotion:forward": [
+      "move forward",
+      "go forward",
+      "straight ahead",
+      "go straight"
+    ],
+    "locomotion:backward": [
+      "move backward",
+      "go backward",
+      "back up"
+    ],
+    "locomotion:left_strafe": [
+      "left strafe",
+      "strafe left",
+      "move left",
+      "to your left"
+    ],
+    "locomotion:right_strafe": [
+      "right strafe",
+      "strafe right",
+      "move right",
+      "to your right"
+    ],
+    "locomotion:turn_left": [
+      "turn left",
+      "rotate left"
+    ],
+    "locomotion:turn_right": [
+      "turn right",
+      "rotate right"
+    ],
+    "state_control:stand_up": [
+      "stand up",
+      "standing posture",
+      "rise to the standing posture",
+      "rise to standing"
+    ],
+    "state_control:damp": [
+      "damping mode",
+      "enter damp",
+      "damp mode"
+    ],
+    "state_control:start": [
+      "start mode",
+      "enter start",
+      "locomotion-ready",
+      "motion mode"
+    ]
+  },
+  "operational_bounds": {
+    "locomotion_duration_minimum": 0.1,
+    "allowed_states": ["stand_up", "damp", "start"],
+    "allowed_locomotion_directions": [
+      "forward",
+      "backward",
+      "left_strafe",
+      "right_strafe",
+      "turn_left",
+      "turn_right"
+    ]
+  }
+}

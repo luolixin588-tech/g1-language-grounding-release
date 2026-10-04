@@ -1,0 +1,2607 @@
+{
+  "results": [
+    {
+      "model_id": "qwen2.5_14b",
+      "model_display_name": "Qwen2.5-14B",
+      "summaries": {
+        "full": {
+          "run_id": "qwen2.5_14b_full",
+          "condition": "full",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.9444444444444444,
+          "n_task_success": 340,
+          "plan_validity_rate": 1.0,
+          "n_plan_valid": 360,
+          "planning_latency_ms": {
+            "median": 641.7541799601167,
+            "p95": 1448.4346099896359,
+            "mean": 737.7675972684907
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 0.6666666666666666,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.6666666666666666,
+              "parameter_accuracy": 0.6666666666666666,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.9333333333333333
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.9555555555555556
+            }
+          },
+          "n_instructions_success_all_repeats": 113,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.9444444444444444,
+            "parameter_accuracy": 0.9444444444444444,
+            "order_accuracy": 1.0
+          }
+        },
+        "reduced_capability_info": {
+          "run_id": "qwen2.5_14b_reduced_capability_info",
+          "condition": "reduced_capability_info",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.4861111111111111,
+          "n_task_success": 175,
+          "plan_validity_rate": 0.5916666666666667,
+          "n_plan_valid": 213,
+          "planning_latency_ms": {
+            "median": 1021.7840485274792,
+            "p95": 4535.9644637443125,
+            "mean": 1783.8095098927927
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 0.0,
+              "plan_validity_rate": 0.05,
+              "capability_selection_accuracy": 0.95,
+              "parameter_accuracy": 0.0,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 0.0,
+              "plan_validity_rate": 0.4,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.30833333333333335,
+              "order_accuracy": 1.0
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.35,
+              "plan_validity_rate": 0.4,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.7,
+              "order_accuracy": 1.0
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 0.5666666666666667,
+              "plan_validity_rate": 0.7,
+              "capability_selection_accuracy": 0.5666666666666667,
+              "parameter_accuracy": 0.5666666666666667,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.5
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.4722222222222222
+            }
+          },
+          "n_instructions_success_all_repeats": 58,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.9194444444444444,
+            "parameter_accuracy": 0.5958333333333333,
+            "order_accuracy": 1.0
+          }
+        },
+        "no_capability_semantics": {
+          "run_id": "qwen2.5_14b_no_capability_semantics",
+          "condition": "no_capability_semantics",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.5666666666666667,
+          "n_task_success": 204,
+          "plan_validity_rate": 1.0,
+          "n_plan_valid": 360,
+          "planning_latency_ms": {
+            "median": 615.3467802796513,
+            "p95": 1439.975676359609,
+            "mean": 764.0841501635603
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 0.05,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.05,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 0.4,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.5416666666666666,
+              "order_accuracy": 0.9
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.4,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.7333333333333333,
+              "order_accuracy": 0.95
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 0.55,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.55,
+              "parameter_accuracy": 0.55,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.5833333333333334
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.55
+            }
+          },
+          "n_instructions_success_all_repeats": 68,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.925,
+            "parameter_accuracy": 0.6458333333333334,
+            "order_accuracy": 0.975
+          }
+        },
+        "no_parameter_semantics": {
+          "run_id": "qwen2.5_14b_no_parameter_semantics",
+          "condition": "no_parameter_semantics",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.6472222222222223,
+          "n_task_success": 233,
+          "plan_validity_rate": 0.8833333333333333,
+          "n_plan_valid": 318,
+          "planning_latency_ms": {
+            "median": 861.6142021492124,
+            "p95": 2448.971048463136,
+            "mean": 1051.5237118039902
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 0.25,
+              "plan_validity_rate": 0.8,
+              "capability_selection_accuracy": 0.8,
+              "parameter_accuracy": 0.25,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 0.4,
+              "plan_validity_rate": 0.9,
+              "capability_selection_accuracy": 0.9291666666666667,
+              "parameter_accuracy": 0.7291666666666666,
+              "order_accuracy": 0.75
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.65,
+              "plan_validity_rate": 0.9,
+              "capability_selection_accuracy": 0.95,
+              "parameter_accuracy": 0.9291666666666667,
+              "order_accuracy": 0.9
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 0.5833333333333334,
+              "plan_validity_rate": 0.7,
+              "capability_selection_accuracy": 0.5833333333333334,
+              "parameter_accuracy": 0.5833333333333334,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.6666666666666666
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.6277777777777778
+            }
+          },
+          "n_instructions_success_all_repeats": 77,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.8770833333333333,
+            "parameter_accuracy": 0.7486111111111111,
+            "order_accuracy": 0.9416666666666667
+          }
+        },
+        "no_schema_constrained_decoding": {
+          "run_id": "qwen2.5_14b_no_schema_constrained_decoding",
+          "condition": "no_schema_constrained_decoding",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.9305555555555556,
+          "n_task_success": 335,
+          "plan_validity_rate": 1.0,
+          "n_plan_valid": 360,
+          "planning_latency_ms": {
+            "median": 627.3318398743868,
+            "p95": 1688.6425758711994,
+            "mean": 809.6267469887001
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 0.95,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.9666666666666667,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.9916666666666667,
+              "order_accuracy": 1.0
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 0.6666666666666666,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.6666666666666666,
+              "parameter_accuracy": 0.6666666666666666,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.9055555555555556
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.9555555555555556
+            }
+          },
+          "n_instructions_success_all_repeats": 111,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.9444444444444444,
+            "parameter_accuracy": 0.9430555555555555,
+            "order_accuracy": 1.0
+          }
+        }
+      },
+      "family": {
+        "full": {
+          "P1": 1.0,
+          "P2": 1.0,
+          "P3": 1.0,
+          "P4": 1.0,
+          "P5": 1.0,
+          "P6": 0.6666666666666666
+        },
+        "reduced_capability_info": {
+          "P1": 1.0,
+          "P2": 0.0,
+          "P3": 1.0,
+          "P4": 0.0,
+          "P5": 0.35,
+          "P6": 0.5666666666666667
+        },
+        "no_capability_semantics": {
+          "P1": 1.0,
+          "P2": 0.05,
+          "P3": 1.0,
+          "P4": 0.4,
+          "P5": 0.4,
+          "P6": 0.55
+        },
+        "no_parameter_semantics": {
+          "P1": 1.0,
+          "P2": 1.0,
+          "P3": 0.25,
+          "P4": 0.4,
+          "P5": 0.65,
+          "P6": 0.5833333333333334
+        },
+        "no_schema_constrained_decoding": {
+          "P1": 0.95,
+          "P2": 1.0,
+          "P3": 1.0,
+          "P4": 1.0,
+          "P5": 0.9666666666666667,
+          "P6": 0.6666666666666666
+        }
+      },
+      "diagnostics": {
+        "full": {
+          "n": 360,
+          "invalid_plans": 0,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 20,
+          "p6_physical_dispatch_errors": 20,
+          "n_p6": 60,
+          "error_labels": {
+            "p6_physical_action_dispatched": 20
+          },
+          "capability_selection_accuracy": 0.9444444444444444,
+          "parameter_accuracy": 0.9444444444444444,
+          "order_accuracy": 1.0,
+          "capability_selection_error": 0.05555555555555558,
+          "parameter_error": 0.05555555555555558,
+          "order_error": 0.0
+        },
+        "reduced_capability_info": {
+          "n": 360,
+          "invalid_plans": 147,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 38,
+          "p6_physical_dispatch_errors": 26,
+          "n_p6": 60,
+          "error_labels": {
+            "invalid_plan": 147,
+            "parameter_mismatch": 156,
+            "p6_physical_action_dispatched": 26,
+            "omitted_step": 3,
+            "extra_physical_action": 3
+          },
+          "capability_selection_accuracy": 0.9194444444444444,
+          "parameter_accuracy": 0.5958333333333333,
+          "order_accuracy": 1.0,
+          "capability_selection_error": 0.0805555555555556,
+          "parameter_error": 0.4041666666666667,
+          "order_error": 0.0
+        },
+        "no_capability_semantics": {
+          "n": 360,
+          "invalid_plans": 0,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 156,
+          "p6_physical_dispatch_errors": 27,
+          "n_p6": 60,
+          "error_labels": {
+            "parameter_mismatch": 129,
+            "p6_physical_action_dispatched": 27,
+            "extra_physical_action": 11
+          },
+          "capability_selection_accuracy": 0.925,
+          "parameter_accuracy": 0.6458333333333334,
+          "order_accuracy": 0.975,
+          "capability_selection_error": 0.07499999999999996,
+          "parameter_error": 0.35416666666666663,
+          "order_error": 0.025000000000000022
+        },
+        "no_parameter_semantics": {
+          "n": 360,
+          "invalid_plans": 42,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 85,
+          "p6_physical_dispatch_errors": 25,
+          "n_p6": 60,
+          "error_labels": {
+            "parameter_mismatch": 75,
+            "capability_mismatch": 24,
+            "invalid_plan": 42,
+            "p6_physical_action_dispatched": 25,
+            "omitted_step": 3
+          },
+          "capability_selection_accuracy": 0.8770833333333333,
+          "parameter_accuracy": 0.7486111111111111,
+          "order_accuracy": 0.9416666666666667,
+          "capability_selection_error": 0.12291666666666667,
+          "parameter_error": 0.2513888888888889,
+          "order_error": 0.05833333333333335
+        },
+        "no_schema_constrained_decoding": {
+          "n": 360,
+          "invalid_plans": 0,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 25,
+          "p6_physical_dispatch_errors": 20,
+          "n_p6": 60,
+          "error_labels": {
+            "p6_physical_action_dispatched": 20,
+            "parameter_mismatch": 2,
+            "extra_physical_action": 3,
+            "p1_physical_action_dispatched": 3
+          },
+          "capability_selection_accuracy": 0.9444444444444444,
+          "parameter_accuracy": 0.9430555555555555,
+          "order_accuracy": 1.0,
+          "capability_selection_error": 0.05555555555555558,
+          "parameter_error": 0.056944444444444464,
+          "order_error": 0.0
+        }
+      },
+      "effects": {
+        "no_capability_semantics": {
+          "delta": -0.37777777777777777,
+          "ci_low": -0.46944444444444444,
+          "ci_high": -0.2861111111111111,
+          "mcnemar_raw_p": 4.355626970209414e-12,
+          "p_adjusted": 1.3066880910628242e-11,
+          "significant_0.05": true,
+          "holm_family": true
+        },
+        "no_parameter_semantics": {
+          "delta": -0.29722222222222217,
+          "ci_low": -0.38888888888888884,
+          "ci_high": -0.2055555555555556,
+          "mcnemar_raw_p": 5.631591193377972e-09,
+          "p_adjusted": 1.1263182386755943e-08,
+          "significant_0.05": true,
+          "holm_family": true
+        },
+        "no_schema_constrained_decoding": {
+          "delta": -0.01388888888888884,
+          "ci_low": -0.036111111111111094,
+          "ci_high": 0.0,
+          "mcnemar_raw_p": 0.5,
+          "p_adjusted": 0.5,
+          "significant_0.05": false,
+          "holm_family": true
+        },
+        "reduced_capability_info": {
+          "delta": -0.4583333333333333,
+          "ci_low": -0.55,
+          "ci_high": -0.3666666666666667,
+          "mcnemar_raw_p": null,
+          "p_adjusted": null,
+          "significant_0.05": null,
+          "holm_family": false
+        }
+      },
+      "source_dirs": {
+        "full": "<original-repo>/runs/full/full_20260821T051022Z_d81f78bf",
+        "reduced_capability_info": "<original-repo>/runs/reduced_capability_info/reduced_capability_info_20260821T052504Z_6e0dd3ea",
+        "no_capability_semantics": "<original-repo>/runs/no_capability_semantics/no_capability_semantics_20260824T111546Z_368b8574",
+        "no_parameter_semantics": "<original-repo>/runs/no_parameter_semantics/no_parameter_semantics_20260824T112027Z_d8471060",
+        "no_schema_constrained_decoding": "<original-repo>/runs/no_structure/no_structure_20260821T052009Z_6bf8d7c2"
+      }
+    },
+    {
+      "model_id": "phi4_14b",
+      "model_display_name": "Phi-4 14B",
+      "summaries": {
+        "full": {
+          "run_id": "phi4_14b_full",
+          "condition": "full",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.975,
+          "n_task_success": 351,
+          "plan_validity_rate": 1.0,
+          "n_plan_valid": 360,
+          "planning_latency_ms": {
+            "median": 715.1601555087836,
+            "p95": 1607.7941760013346,
+            "mean": 820.6695096552721
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 0.95,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.9,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.975,
+              "order_accuracy": 0.975
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.9666666666666667
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.9833333333333333
+            }
+          },
+          "n_instructions_success_all_repeats": 117,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 1.0,
+            "parameter_accuracy": 0.9958333333333333,
+            "order_accuracy": 0.9958333333333333
+          }
+        },
+        "reduced_capability_info": {
+          "run_id": "phi4_14b_reduced_capability_info",
+          "condition": "reduced_capability_info",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.5083333333333333,
+          "n_task_success": 183,
+          "plan_validity_rate": 0.675,
+          "n_plan_valid": 243,
+          "planning_latency_ms": {
+            "median": 914.4181640003808,
+            "p95": 4428.77792773361,
+            "mean": 1682.7448490025645
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 0.0,
+              "plan_validity_rate": 0.25,
+              "capability_selection_accuracy": 0.75,
+              "parameter_accuracy": 0.0,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 0.8,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.8,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 0.0,
+              "plan_validity_rate": 0.4,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.30833333333333335,
+              "order_accuracy": 1.0
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.3,
+              "plan_validity_rate": 0.4,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.6833333333333333,
+              "order_accuracy": 1.0
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 0.95,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.95,
+              "parameter_accuracy": 0.95,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.5
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.5166666666666667
+            }
+          },
+          "n_instructions_success_all_repeats": 61,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.95,
+            "parameter_accuracy": 0.6236111111111111,
+            "order_accuracy": 1.0
+          }
+        },
+        "no_capability_semantics": {
+          "run_id": "phi4_14b_no_capability_semantics",
+          "condition": "no_capability_semantics",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.6,
+          "n_task_success": 216,
+          "plan_validity_rate": 1.0,
+          "n_plan_valid": 360,
+          "planning_latency_ms": {
+            "median": 712.1268045011675,
+            "p95": 1385.6578115955926,
+            "mean": 802.234817036434
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 0.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.95,
+              "parameter_accuracy": 0.05,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 0.4,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.49166666666666664,
+              "order_accuracy": 1.0
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.4,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.7166666666666667,
+              "order_accuracy": 1.0
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 0.8,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.8,
+              "parameter_accuracy": 0.8,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.6
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.6
+            }
+          },
+          "n_instructions_success_all_repeats": 72,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.9583333333333334,
+            "parameter_accuracy": 0.6763888888888889,
+            "order_accuracy": 1.0
+          }
+        },
+        "no_parameter_semantics": {
+          "run_id": "phi4_14b_no_parameter_semantics",
+          "condition": "no_parameter_semantics",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.725,
+          "n_task_success": 261,
+          "plan_validity_rate": 0.9916666666666667,
+          "n_plan_valid": 357,
+          "planning_latency_ms": {
+            "median": 708.1536790065002,
+            "p95": 2009.7898723994156,
+            "mean": 923.1926389080602
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 0.25,
+              "plan_validity_rate": 0.95,
+              "capability_selection_accuracy": 0.7,
+              "parameter_accuracy": 0.25,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 0.4,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.9,
+              "parameter_accuracy": 0.6583333333333333,
+              "order_accuracy": 0.85
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.7,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.95,
+              "parameter_accuracy": 0.9416666666666667,
+              "order_accuracy": 0.9
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.7333333333333333
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.7166666666666667
+            }
+          },
+          "n_instructions_success_all_repeats": 87,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.925,
+            "parameter_accuracy": 0.8083333333333333,
+            "order_accuracy": 0.9583333333333334
+          }
+        },
+        "no_schema_constrained_decoding": {
+          "run_id": "phi4_14b_no_schema_constrained_decoding",
+          "condition": "no_schema_constrained_decoding",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.9666666666666667,
+          "n_task_success": 348,
+          "plan_validity_rate": 1.0,
+          "n_plan_valid": 360,
+          "planning_latency_ms": {
+            "median": 747.9984514939133,
+            "p95": 1784.286385755695,
+            "mean": 886.405973613647
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 0.95,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.85,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.975,
+              "order_accuracy": 0.95
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.9666666666666667
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.9666666666666667
+            }
+          },
+          "n_instructions_success_all_repeats": 116,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 1.0,
+            "parameter_accuracy": 0.9958333333333333,
+            "order_accuracy": 0.9916666666666667
+          }
+        }
+      },
+      "family": {
+        "full": {
+          "P1": 0.95,
+          "P2": 1.0,
+          "P3": 1.0,
+          "P4": 1.0,
+          "P5": 0.9,
+          "P6": 1.0
+        },
+        "reduced_capability_info": {
+          "P1": 1.0,
+          "P2": 0.0,
+          "P3": 0.8,
+          "P4": 0.0,
+          "P5": 0.3,
+          "P6": 0.95
+        },
+        "no_capability_semantics": {
+          "P1": 1.0,
+          "P2": 0.0,
+          "P3": 1.0,
+          "P4": 0.4,
+          "P5": 0.4,
+          "P6": 0.8
+        },
+        "no_parameter_semantics": {
+          "P1": 1.0,
+          "P2": 1.0,
+          "P3": 0.25,
+          "P4": 0.4,
+          "P5": 0.7,
+          "P6": 1.0
+        },
+        "no_schema_constrained_decoding": {
+          "P1": 0.95,
+          "P2": 1.0,
+          "P3": 1.0,
+          "P4": 1.0,
+          "P5": 0.85,
+          "P6": 1.0
+        }
+      },
+      "diagnostics": {
+        "full": {
+          "n": 360,
+          "invalid_plans": 0,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 9,
+          "p6_physical_dispatch_errors": 0,
+          "n_p6": 60,
+          "error_labels": {
+            "parameter_mismatch": 3,
+            "order_reversal": 3,
+            "extra_physical_action": 3,
+            "p1_physical_action_dispatched": 3
+          },
+          "capability_selection_accuracy": 1.0,
+          "parameter_accuracy": 0.9958333333333333,
+          "order_accuracy": 0.9958333333333333,
+          "capability_selection_error": 0.0,
+          "parameter_error": 0.004166666666666652,
+          "order_error": 0.004166666666666652
+        },
+        "reduced_capability_info": {
+          "n": 360,
+          "invalid_plans": 117,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 60,
+          "p6_physical_dispatch_errors": 3,
+          "n_p6": 60,
+          "error_labels": {
+            "invalid_plan": 117,
+            "parameter_mismatch": 159,
+            "omitted_step": 15,
+            "extra_physical_action": 3,
+            "p6_physical_action_dispatched": 3
+          },
+          "capability_selection_accuracy": 0.95,
+          "parameter_accuracy": 0.6236111111111111,
+          "order_accuracy": 1.0,
+          "capability_selection_error": 0.050000000000000044,
+          "parameter_error": 0.3763888888888889,
+          "order_error": 0.0
+        },
+        "no_capability_semantics": {
+          "n": 360,
+          "invalid_plans": 0,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 144,
+          "p6_physical_dispatch_errors": 12,
+          "n_p6": 60,
+          "error_labels": {
+            "parameter_mismatch": 126,
+            "p6_physical_action_dispatched": 12,
+            "omitted_step": 3,
+            "extra_physical_action": 9
+          },
+          "capability_selection_accuracy": 0.9583333333333334,
+          "parameter_accuracy": 0.6763888888888889,
+          "order_accuracy": 1.0,
+          "capability_selection_error": 0.04166666666666663,
+          "parameter_error": 0.32361111111111107,
+          "order_error": 0.0
+        },
+        "no_parameter_semantics": {
+          "n": 360,
+          "invalid_plans": 3,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 96,
+          "p6_physical_dispatch_errors": 0,
+          "n_p6": 60,
+          "error_labels": {
+            "parameter_mismatch": 60,
+            "omitted_step": 27,
+            "capability_mismatch": 18,
+            "invalid_plan": 3
+          },
+          "capability_selection_accuracy": 0.925,
+          "parameter_accuracy": 0.8083333333333333,
+          "order_accuracy": 0.9583333333333334,
+          "capability_selection_error": 0.07499999999999996,
+          "parameter_error": 0.19166666666666665,
+          "order_error": 0.04166666666666663
+        },
+        "no_schema_constrained_decoding": {
+          "n": 360,
+          "invalid_plans": 0,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 12,
+          "p6_physical_dispatch_errors": 0,
+          "n_p6": 60,
+          "error_labels": {
+            "parameter_mismatch": 3,
+            "order_reversal": 6,
+            "extra_physical_action": 3,
+            "p1_physical_action_dispatched": 3
+          },
+          "capability_selection_accuracy": 1.0,
+          "parameter_accuracy": 0.9958333333333333,
+          "order_accuracy": 0.9916666666666667,
+          "capability_selection_error": 0.0,
+          "parameter_error": 0.004166666666666652,
+          "order_error": 0.008333333333333304
+        }
+      },
+      "effects": {
+        "no_capability_semantics": {
+          "delta": -0.375,
+          "ci_low": -0.4666666666666667,
+          "ci_high": -0.29166666666666663,
+          "mcnemar_raw_p": 6.821210263296962e-13,
+          "p_adjusted": 2.0463630789890885e-12,
+          "significant_0.05": true,
+          "holm_family": true
+        },
+        "no_parameter_semantics": {
+          "delta": -0.25,
+          "ci_low": -0.34166666666666656,
+          "ci_high": -0.16666666666666663,
+          "mcnemar_raw_p": 2.2721360437572002e-07,
+          "p_adjusted": 4.5442720875144005e-07,
+          "significant_0.05": true,
+          "holm_family": true
+        },
+        "no_schema_constrained_decoding": {
+          "delta": -0.008333333333333304,
+          "ci_low": -0.025000000000000022,
+          "ci_high": 0.0,
+          "mcnemar_raw_p": 1.0,
+          "p_adjusted": 1.0,
+          "significant_0.05": false,
+          "holm_family": true
+        },
+        "reduced_capability_info": {
+          "delta": -0.4666666666666667,
+          "ci_low": -0.5583333333333333,
+          "ci_high": -0.375,
+          "mcnemar_raw_p": null,
+          "p_adjusted": null,
+          "significant_0.05": null,
+          "holm_family": false
+        }
+      },
+      "source_dirs": {
+        "full": "<original-repo>/runs/multimodel_v1.1/phi4_14b/full",
+        "reduced_capability_info": "<original-repo>/runs/multimodel_v1.1/phi4_14b/reduced_capability_info",
+        "no_capability_semantics": "<original-repo>/runs/multimodel_v1.1/phi4_14b/no_capability_semantics",
+        "no_parameter_semantics": "<original-repo>/runs/multimodel_v1.1/phi4_14b/no_parameter_semantics",
+        "no_schema_constrained_decoding": "<original-repo>/runs/multimodel_v1.1/phi4_14b/no_schema_constrained_decoding"
+      }
+    },
+    {
+      "model_id": "gemma3_12b",
+      "model_display_name": "Gemma 3 12B",
+      "summaries": {
+        "full": {
+          "run_id": "gemma3_12b_full",
+          "condition": "full",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.95,
+          "n_task_success": 342,
+          "plan_validity_rate": 1.0,
+          "n_plan_valid": 360,
+          "planning_latency_ms": {
+            "median": 961.6767630068352,
+            "p95": 1933.8138342747698,
+            "mean": 1045.2328210217981
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 0.9,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.95,
+              "parameter_accuracy": 0.9,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.8,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 0.9166666666666666
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.95
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.95
+            }
+          },
+          "n_instructions_success_all_repeats": 114,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.9916666666666667,
+            "parameter_accuracy": 0.9833333333333333,
+            "order_accuracy": 0.9861111111111112
+          }
+        },
+        "reduced_capability_info": {
+          "run_id": "gemma3_12b_reduced_capability_info",
+          "condition": "reduced_capability_info",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.48333333333333334,
+          "n_task_success": 174,
+          "plan_validity_rate": 0.6805555555555556,
+          "n_plan_valid": 245,
+          "planning_latency_ms": {
+            "median": 1084.3219729722477,
+            "p95": 6291.714759549359,
+            "mean": 2172.953917841207
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 0.0,
+              "plan_validity_rate": 0.38333333333333336,
+              "capability_selection_accuracy": 0.6166666666666667,
+              "parameter_accuracy": 0.0,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 0.75,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.95,
+              "parameter_accuracy": 0.75,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 0.0,
+              "plan_validity_rate": 0.4,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.30833333333333335,
+              "order_accuracy": 1.0
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.3,
+              "plan_validity_rate": 0.4,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.6833333333333333,
+              "order_accuracy": 0.8416666666666667
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 0.85,
+              "plan_validity_rate": 0.9,
+              "capability_selection_accuracy": 0.85,
+              "parameter_accuracy": 0.85,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.5
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.4666666666666667
+            }
+          },
+          "n_instructions_success_all_repeats": 58,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.9027777777777778,
+            "parameter_accuracy": 0.5986111111111111,
+            "order_accuracy": 0.9736111111111111
+          }
+        },
+        "no_capability_semantics": {
+          "run_id": "gemma3_12b_no_capability_semantics",
+          "condition": "no_capability_semantics",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.6,
+          "n_task_success": 216,
+          "plan_validity_rate": 1.0,
+          "n_plan_valid": 360,
+          "planning_latency_ms": {
+            "median": 923.4198269987246,
+            "p95": 1719.4517195661324,
+            "mean": 1021.5249280379794
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 0.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.85,
+              "parameter_accuracy": 0.05,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 0.9,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.95,
+              "parameter_accuracy": 0.9,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 0.4,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.49166666666666664,
+              "order_accuracy": 1.0
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.4,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.7166666666666667,
+              "order_accuracy": 0.8166666666666667
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 0.9,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.9,
+              "parameter_accuracy": 0.9,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.6
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.6
+            }
+          },
+          "n_instructions_success_all_repeats": 72,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.95,
+            "parameter_accuracy": 0.6763888888888889,
+            "order_accuracy": 0.9694444444444444
+          }
+        },
+        "no_parameter_semantics": {
+          "run_id": "gemma3_12b_no_parameter_semantics",
+          "condition": "no_parameter_semantics",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.6833333333333333,
+          "n_task_success": 246,
+          "plan_validity_rate": 1.0,
+          "n_plan_valid": 360,
+          "planning_latency_ms": {
+            "median": 955.5474975059042,
+            "p95": 1985.5227453968837,
+            "mean": 1125.9564112415117
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 0.95,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.95,
+              "parameter_accuracy": 0.95,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 0.2,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.5,
+              "parameter_accuracy": 0.2,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 0.35,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.7333333333333333,
+              "parameter_accuracy": 0.8416666666666667,
+              "order_accuracy": 0.6666666666666666
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.6,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.9041666666666667,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 0.6833333333333333
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.6666666666666666
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.7
+            }
+          },
+          "n_instructions_success_all_repeats": 82,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.8479166666666667,
+            "parameter_accuracy": 0.8319444444444445,
+            "order_accuracy": 0.8916666666666667
+          }
+        },
+        "no_schema_constrained_decoding": {
+          "run_id": "gemma3_12b_no_schema_constrained_decoding",
+          "condition": "no_schema_constrained_decoding",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.9444444444444444,
+          "n_task_success": 340,
+          "plan_validity_rate": 0.9916666666666667,
+          "n_plan_valid": 357,
+          "planning_latency_ms": {
+            "median": 1118.9120344934054,
+            "p95": 2973.6121608031685,
+            "mean": 1316.798773716194
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 0.9166666666666666,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.95,
+              "parameter_accuracy": 0.9166666666666666,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 0.95,
+              "plan_validity_rate": 0.95,
+              "capability_selection_accuracy": 0.95,
+              "parameter_accuracy": 0.95,
+              "order_accuracy": 0.95
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.85,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 0.925
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 0.95,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.95,
+              "parameter_accuracy": 0.95,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.9555555555555556
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.9333333333333333
+            }
+          },
+          "n_instructions_success_all_repeats": 113,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.975,
+            "parameter_accuracy": 0.9694444444444444,
+            "order_accuracy": 0.9791666666666666
+          }
+        }
+      },
+      "family": {
+        "full": {
+          "P1": 1.0,
+          "P2": 1.0,
+          "P3": 0.9,
+          "P4": 1.0,
+          "P5": 0.8,
+          "P6": 1.0
+        },
+        "reduced_capability_info": {
+          "P1": 1.0,
+          "P2": 0.0,
+          "P3": 0.75,
+          "P4": 0.0,
+          "P5": 0.3,
+          "P6": 0.85
+        },
+        "no_capability_semantics": {
+          "P1": 1.0,
+          "P2": 0.0,
+          "P3": 0.9,
+          "P4": 0.4,
+          "P5": 0.4,
+          "P6": 0.9
+        },
+        "no_parameter_semantics": {
+          "P1": 1.0,
+          "P2": 0.95,
+          "P3": 0.2,
+          "P4": 0.35,
+          "P5": 0.6,
+          "P6": 1.0
+        },
+        "no_schema_constrained_decoding": {
+          "P1": 1.0,
+          "P2": 1.0,
+          "P3": 0.9166666666666666,
+          "P4": 0.95,
+          "P5": 0.85,
+          "P6": 0.95
+        }
+      },
+      "diagnostics": {
+        "full": {
+          "n": 360,
+          "invalid_plans": 0,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 18,
+          "p6_physical_dispatch_errors": 0,
+          "n_p6": 60,
+          "error_labels": {
+            "order_reversal": 12,
+            "omitted_step": 3,
+            "parameter_mismatch": 3
+          },
+          "capability_selection_accuracy": 0.9916666666666667,
+          "parameter_accuracy": 0.9833333333333333,
+          "order_accuracy": 0.9861111111111112,
+          "capability_selection_error": 0.008333333333333304,
+          "parameter_error": 0.01666666666666672,
+          "order_error": 0.01388888888888884
+        },
+        "reduced_capability_info": {
+          "n": 360,
+          "invalid_plans": 115,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 71,
+          "p6_physical_dispatch_errors": 9,
+          "n_p6": 60,
+          "error_labels": {
+            "capability_mismatch": 18,
+            "invalid_plan": 115,
+            "parameter_mismatch": 133,
+            "p6_physical_action_dispatched": 9,
+            "omitted_step": 26
+          },
+          "capability_selection_accuracy": 0.9027777777777778,
+          "parameter_accuracy": 0.5986111111111111,
+          "order_accuracy": 0.9736111111111111,
+          "capability_selection_error": 0.09722222222222221,
+          "parameter_error": 0.4013888888888889,
+          "order_error": 0.026388888888888906
+        },
+        "no_capability_semantics": {
+          "n": 360,
+          "invalid_plans": 0,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 144,
+          "p6_physical_dispatch_errors": 6,
+          "n_p6": 60,
+          "error_labels": {
+            "capability_mismatch": 21,
+            "parameter_mismatch": 102,
+            "p6_physical_action_dispatched": 6,
+            "omitted_step": 12,
+            "extra_physical_action": 12
+          },
+          "capability_selection_accuracy": 0.95,
+          "parameter_accuracy": 0.6763888888888889,
+          "order_accuracy": 0.9694444444444444,
+          "capability_selection_error": 0.050000000000000044,
+          "parameter_error": 0.32361111111111107,
+          "order_error": 0.030555555555555558
+        },
+        "no_parameter_semantics": {
+          "n": 360,
+          "invalid_plans": 0,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 114,
+          "p6_physical_dispatch_errors": 0,
+          "n_p6": 60,
+          "error_labels": {
+            "parameter_mismatch": 21,
+            "order_reversal": 9,
+            "omitted_step": 27,
+            "capability_mismatch": 57,
+            "extra_physical_action": 9
+          },
+          "capability_selection_accuracy": 0.8479166666666667,
+          "parameter_accuracy": 0.8319444444444445,
+          "order_accuracy": 0.8916666666666667,
+          "capability_selection_error": 0.15208333333333335,
+          "parameter_error": 0.1680555555555555,
+          "order_error": 0.10833333333333328
+        },
+        "no_schema_constrained_decoding": {
+          "n": 360,
+          "invalid_plans": 3,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 17,
+          "p6_physical_dispatch_errors": 3,
+          "n_p6": 60,
+          "error_labels": {
+            "p6_physical_action_dispatched": 3,
+            "order_reversal": 9,
+            "capability_mismatch": 6,
+            "invalid_plan": 3,
+            "parameter_mismatch": 2
+          },
+          "capability_selection_accuracy": 0.975,
+          "parameter_accuracy": 0.9694444444444444,
+          "order_accuracy": 0.9791666666666666,
+          "capability_selection_error": 0.025000000000000022,
+          "parameter_error": 0.030555555555555558,
+          "order_error": 0.02083333333333337
+        }
+      },
+      "effects": {
+        "no_capability_semantics": {
+          "delta": -0.35,
+          "ci_low": -0.43333333333333335,
+          "ci_high": -0.2666666666666666,
+          "mcnemar_raw_p": 4.547473508864641e-13,
+          "p_adjusted": 1.3642420526593924e-12,
+          "significant_0.05": true,
+          "holm_family": true
+        },
+        "no_parameter_semantics": {
+          "delta": -0.2666666666666666,
+          "ci_low": -0.35,
+          "ci_high": -0.19166666666666665,
+          "mcnemar_raw_p": 4.656612873077393e-10,
+          "p_adjusted": 9.313225746154785e-10,
+          "significant_0.05": true,
+          "holm_family": true
+        },
+        "no_schema_constrained_decoding": {
+          "delta": -0.005555555555555536,
+          "ci_low": -0.04166666666666674,
+          "ci_high": 0.030555555555555558,
+          "mcnemar_raw_p": 1.0,
+          "p_adjusted": 1.0,
+          "significant_0.05": false,
+          "holm_family": true
+        },
+        "reduced_capability_info": {
+          "delta": -0.4666666666666666,
+          "ci_low": -0.5583333333333333,
+          "ci_high": -0.375,
+          "mcnemar_raw_p": null,
+          "p_adjusted": null,
+          "significant_0.05": null,
+          "holm_family": false
+        }
+      },
+      "source_dirs": {
+        "full": "<original-repo>/runs/multimodel_v1.1/gemma3_12b/full",
+        "reduced_capability_info": "<original-repo>/runs/multimodel_v1.1/gemma3_12b/reduced_capability_info",
+        "no_capability_semantics": "<original-repo>/runs/multimodel_v1.1/gemma3_12b/no_capability_semantics",
+        "no_parameter_semantics": "<original-repo>/runs/multimodel_v1.1/gemma3_12b/no_parameter_semantics",
+        "no_schema_constrained_decoding": "<original-repo>/runs/multimodel_v1.1/gemma3_12b/no_schema_constrained_decoding"
+      }
+    },
+    {
+      "model_id": "mistral_nemo_12b",
+      "model_display_name": "Mistral NeMo 12B",
+      "summaries": {
+        "full": {
+          "run_id": "mistral_nemo_12b_full",
+          "condition": "full",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.7,
+          "n_task_success": 252,
+          "plan_validity_rate": 1.0,
+          "n_plan_valid": 360,
+          "planning_latency_ms": {
+            "median": 508.53545949212275,
+            "p95": 1886.5669402468484,
+            "mean": 689.7987603052267
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 0.8,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.85,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 0.9,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.9,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 0.75,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.9041666666666667,
+              "order_accuracy": 1.0
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.55,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.8041666666666667,
+              "order_accuracy": 0.9333333333333333
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 0.2,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.2,
+              "parameter_accuracy": 0.2,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.6833333333333333
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.7166666666666667
+            }
+          },
+          "n_instructions_success_all_repeats": 83,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.8666666666666667,
+            "parameter_accuracy": 0.7763888888888889,
+            "order_accuracy": 0.9888888888888889
+          }
+        },
+        "reduced_capability_info": {
+          "run_id": "mistral_nemo_12b_reduced_capability_info",
+          "condition": "reduced_capability_info",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.35,
+          "n_task_success": 126,
+          "plan_validity_rate": 0.5916666666666667,
+          "n_plan_valid": 213,
+          "planning_latency_ms": {
+            "median": 1022.0742830133531,
+            "p95": 3775.285824737512,
+            "mean": 1381.4253126007518
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 0.8,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.8,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 0.0,
+              "plan_validity_rate": 0.15,
+              "capability_selection_accuracy": 0.85,
+              "parameter_accuracy": 0.0,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 0.8,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.8,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 0.0,
+              "plan_validity_rate": 0.4,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.30833333333333335,
+              "order_accuracy": 1.0
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.23333333333333334,
+              "plan_validity_rate": 0.4,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.6236111111111111,
+              "order_accuracy": 0.975
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 0.26666666666666666,
+              "plan_validity_rate": 0.6,
+              "capability_selection_accuracy": 0.26666666666666666,
+              "parameter_accuracy": 0.26666666666666666,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.35555555555555557
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.34444444444444444
+            }
+          },
+          "n_instructions_success_all_repeats": 41,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.8527777777777777,
+            "parameter_accuracy": 0.4664351851851852,
+            "order_accuracy": 0.9958333333333333
+          }
+        },
+        "no_capability_semantics": {
+          "run_id": "mistral_nemo_12b_no_capability_semantics",
+          "condition": "no_capability_semantics",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.5361111111111111,
+          "n_task_success": 193,
+          "plan_validity_rate": 1.0,
+          "n_plan_valid": 360,
+          "planning_latency_ms": {
+            "median": 476.6560934949666,
+            "p95": 1359.1384167040815,
+            "mean": 596.9582038444868
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 0.9,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.9,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 0.15,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.95,
+              "parameter_accuracy": 0.2,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 0.4,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.5708333333333333,
+              "order_accuracy": 1.0
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.36666666666666664,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.9833333333333333,
+              "parameter_accuracy": 0.6777777777777777,
+              "order_accuracy": 0.9083333333333333
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 0.4,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.4,
+              "parameter_accuracy": 0.4,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.5388888888888889
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.5333333333333333
+            }
+          },
+          "n_instructions_success_all_repeats": 64,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.8888888888888888,
+            "parameter_accuracy": 0.6247685185185184,
+            "order_accuracy": 0.9847222222222223
+          }
+        },
+        "no_parameter_semantics": {
+          "run_id": "mistral_nemo_12b_no_parameter_semantics",
+          "condition": "no_parameter_semantics",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.525,
+          "n_task_success": 189,
+          "plan_validity_rate": 0.85,
+          "n_plan_valid": 306,
+          "planning_latency_ms": {
+            "median": 503.2039645157056,
+            "p95": 2393.839132900761,
+            "mean": 870.9905256754105
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 0.85,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.85,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 0.25,
+              "plan_validity_rate": 0.9,
+              "capability_selection_accuracy": 0.8,
+              "parameter_accuracy": 0.25,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 0.3,
+              "plan_validity_rate": 0.85,
+              "capability_selection_accuracy": 0.9416666666666667,
+              "parameter_accuracy": 0.5708333333333333,
+              "order_accuracy": 0.75
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.45,
+              "plan_validity_rate": 0.95,
+              "capability_selection_accuracy": 0.9583333333333334,
+              "parameter_accuracy": 0.825,
+              "order_accuracy": 0.8333333333333334
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 0.3,
+              "plan_validity_rate": 0.4,
+              "capability_selection_accuracy": 0.3,
+              "parameter_accuracy": 0.3,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.5166666666666667
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.5333333333333333
+            }
+          },
+          "n_instructions_success_all_repeats": 63,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.8333333333333334,
+            "parameter_accuracy": 0.6326388888888889,
+            "order_accuracy": 0.9305555555555556
+          }
+        },
+        "no_schema_constrained_decoding": {
+          "run_id": "mistral_nemo_12b_no_schema_constrained_decoding",
+          "condition": "no_schema_constrained_decoding",
+          "benchmark_version": "v1.1",
+          "n_runs": 360,
+          "n_instructions": 120,
+          "task_success_rate": 0.6805555555555556,
+          "n_task_success": 245,
+          "plan_validity_rate": 1.0,
+          "n_plan_valid": 360,
+          "planning_latency_ms": {
+            "median": 501.65315650519915,
+            "p95": 1566.0350807927903,
+            "mean": 711.5420606815153
+          },
+          "success_by_family": {
+            "P1_spoken_response": {
+              "n": 60,
+              "task_success_rate": 0.75,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.8,
+              "order_accuracy": 1.0
+            },
+            "P2_single_physical_action": {
+              "n": 60,
+              "task_success_rate": 0.9,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.9,
+              "order_accuracy": 1.0
+            },
+            "P3_parameterized_control": {
+              "n": 60,
+              "task_success_rate": 1.0,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 1.0,
+              "order_accuracy": 1.0
+            },
+            "P4_multistep_physical_sequence": {
+              "n": 60,
+              "task_success_rate": 0.7,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.8916666666666667,
+              "order_accuracy": 1.0
+            },
+            "P5_mixed_speech_action_sequence": {
+              "n": 60,
+              "task_success_rate": 0.55,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 1.0,
+              "parameter_accuracy": 0.8125,
+              "order_accuracy": 0.9166666666666666
+            },
+            "P6_unsupported_or_constrained": {
+              "n": 60,
+              "task_success_rate": 0.18333333333333332,
+              "plan_validity_rate": 1.0,
+              "capability_selection_accuracy": 0.18333333333333332,
+              "parameter_accuracy": 0.18333333333333332,
+              "order_accuracy": 1.0
+            }
+          },
+          "success_by_formulation": {
+            "canonical": {
+              "n": 180,
+              "task_success_rate": 0.6666666666666666
+            },
+            "paraphrase": {
+              "n": 180,
+              "task_success_rate": 0.6944444444444444
+            }
+          },
+          "n_instructions_success_all_repeats": 81,
+          "n_instructions_with_three_repeats": 120,
+          "diagnostics": {
+            "capability_selection_accuracy": 0.8638888888888889,
+            "parameter_accuracy": 0.7645833333333333,
+            "order_accuracy": 0.9861111111111112
+          }
+        }
+      },
+      "family": {
+        "full": {
+          "P1": 0.8,
+          "P2": 0.9,
+          "P3": 1.0,
+          "P4": 0.75,
+          "P5": 0.55,
+          "P6": 0.2
+        },
+        "reduced_capability_info": {
+          "P1": 0.8,
+          "P2": 0.0,
+          "P3": 0.8,
+          "P4": 0.0,
+          "P5": 0.23333333333333334,
+          "P6": 0.26666666666666666
+        },
+        "no_capability_semantics": {
+          "P1": 0.9,
+          "P2": 0.15,
+          "P3": 1.0,
+          "P4": 0.4,
+          "P5": 0.36666666666666664,
+          "P6": 0.4
+        },
+        "no_parameter_semantics": {
+          "P1": 0.85,
+          "P2": 1.0,
+          "P3": 0.25,
+          "P4": 0.3,
+          "P5": 0.45,
+          "P6": 0.3
+        },
+        "no_schema_constrained_decoding": {
+          "P1": 0.75,
+          "P2": 0.9,
+          "P3": 1.0,
+          "P4": 0.7,
+          "P5": 0.55,
+          "P6": 0.18333333333333332
+        }
+      },
+      "diagnostics": {
+        "full": {
+          "n": 360,
+          "invalid_plans": 0,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 108,
+          "p6_physical_dispatch_errors": 48,
+          "n_p6": 60,
+          "error_labels": {
+            "order_reversal": 3,
+            "capability_mismatch": 17,
+            "omitted_step": 20,
+            "required_speech_missing": 20,
+            "p6_physical_action_dispatched": 48,
+            "parameter_mismatch": 31,
+            "p1_physical_action_dispatched": 9,
+            "extra_physical_action": 3
+          },
+          "capability_selection_accuracy": 0.8666666666666667,
+          "parameter_accuracy": 0.7763888888888889,
+          "order_accuracy": 0.9888888888888889,
+          "capability_selection_error": 0.1333333333333333,
+          "parameter_error": 0.2236111111111111,
+          "order_error": 0.011111111111111072
+        },
+        "reduced_capability_info": {
+          "n": 360,
+          "invalid_plans": 147,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 87,
+          "p6_physical_dispatch_errors": 44,
+          "n_p6": 60,
+          "error_labels": {
+            "invalid_plan": 147,
+            "parameter_mismatch": 156,
+            "capability_mismatch": 13,
+            "extra_physical_action": 5,
+            "p6_physical_action_dispatched": 44,
+            "omitted_step": 29,
+            "required_speech_missing": 20
+          },
+          "capability_selection_accuracy": 0.8527777777777777,
+          "parameter_accuracy": 0.4664351851851852,
+          "order_accuracy": 0.9958333333333333,
+          "capability_selection_error": 0.14722222222222225,
+          "parameter_error": 0.5335648148148149,
+          "order_error": 0.004166666666666652
+        },
+        "no_capability_semantics": {
+          "n": 360,
+          "invalid_plans": 0,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 167,
+          "p6_physical_dispatch_errors": 36,
+          "n_p6": 60,
+          "error_labels": {
+            "capability_mismatch": 14,
+            "parameter_mismatch": 105,
+            "p6_physical_action_dispatched": 36,
+            "omitted_step": 17,
+            "required_speech_missing": 11,
+            "extra_physical_action": 3
+          },
+          "capability_selection_accuracy": 0.8888888888888888,
+          "parameter_accuracy": 0.6247685185185184,
+          "order_accuracy": 0.9847222222222223,
+          "capability_selection_error": 0.11111111111111116,
+          "parameter_error": 0.37523148148148155,
+          "order_error": 0.015277777777777724
+        },
+        "no_parameter_semantics": {
+          "n": 360,
+          "invalid_plans": 54,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 117,
+          "p6_physical_dispatch_errors": 42,
+          "n_p6": 60,
+          "error_labels": {
+            "parameter_mismatch": 78,
+            "capability_mismatch": 33,
+            "omitted_step": 24,
+            "required_speech_missing": 12,
+            "invalid_plan": 54,
+            "p6_physical_action_dispatched": 42,
+            "extra_physical_action": 6,
+            "order_reversal": 3
+          },
+          "capability_selection_accuracy": 0.8333333333333334,
+          "parameter_accuracy": 0.6326388888888889,
+          "order_accuracy": 0.9305555555555556,
+          "capability_selection_error": 0.16666666666666663,
+          "parameter_error": 0.36736111111111114,
+          "order_error": 0.06944444444444442
+        },
+        "no_schema_constrained_decoding": {
+          "n": 360,
+          "invalid_plans": 0,
+          "unparseable_plans": 0,
+          "valid_plan_task_failures": 115,
+          "p6_physical_dispatch_errors": 49,
+          "n_p6": 60,
+          "error_labels": {
+            "order_reversal": 3,
+            "capability_mismatch": 21,
+            "omitted_step": 21,
+            "required_speech_missing": 21,
+            "p6_physical_action_dispatched": 49,
+            "parameter_mismatch": 30,
+            "p1_physical_action_dispatched": 9,
+            "extra_physical_action": 6
+          },
+          "capability_selection_accuracy": 0.8638888888888889,
+          "parameter_accuracy": 0.7645833333333333,
+          "order_accuracy": 0.9861111111111112,
+          "capability_selection_error": 0.13611111111111107,
+          "parameter_error": 0.23541666666666672,
+          "order_error": 0.01388888888888884
+        }
+      },
+      "effects": {
+        "no_capability_semantics": {
+          "delta": -0.16388888888888886,
+          "ci_low": -0.25555555555555554,
+          "ci_high": -0.07499999999999996,
+          "mcnemar_raw_p": 0.001878225477412343,
+          "p_adjusted": 0.005634676432237029,
+          "significant_0.05": true,
+          "holm_family": true
+        },
+        "no_parameter_semantics": {
+          "delta": -0.17499999999999993,
+          "ci_low": -0.275,
+          "ci_high": -0.07499999999999996,
+          "mcnemar_raw_p": 0.002887247974285856,
+          "p_adjusted": 0.005774495948571712,
+          "significant_0.05": true,
+          "holm_family": true
+        },
+        "no_schema_constrained_decoding": {
+          "delta": -0.019444444444444375,
+          "ci_low": -0.047222222222222165,
+          "ci_high": 0.0,
+          "mcnemar_raw_p": 0.5,
+          "p_adjusted": 0.5,
+          "significant_0.05": false,
+          "holm_family": true
+        },
+        "reduced_capability_info": {
+          "delta": -0.35,
+          "ci_low": -0.44999999999999996,
+          "ci_high": -0.25000000000000006,
+          "mcnemar_raw_p": null,
+          "p_adjusted": null,
+          "significant_0.05": null,
+          "holm_family": false
+        }
+      },
+      "source_dirs": {
+        "full": "<original-repo>/runs/multimodel_v1.1/mistral_nemo_12b/full",
+        "reduced_capability_info": "<original-repo>/runs/multimodel_v1.1/mistral_nemo_12b/reduced_capability_info",
+        "no_capability_semantics": "<original-repo>/runs/multimodel_v1.1/mistral_nemo_12b/no_capability_semantics",
+        "no_parameter_semantics": "<original-repo>/runs/multimodel_v1.1/mistral_nemo_12b/no_parameter_semantics",
+        "no_schema_constrained_decoding": "<original-repo>/runs/multimodel_v1.1/mistral_nemo_12b/no_schema_constrained_decoding"
+      }
+    }
+  ],
+  "patterns": {
+    "capability_semantics_decreases_all": true,
+    "parameter_semantics_decreases_all": true,
+    "semantic_effect_larger_than_schema_all": true,
+    "p2_capability_drop_all": true,
+    "p3_parameter_drop_all": true,
+    "per_model": {
+      "capability": [
+        {
+          "model": "Qwen2.5-14B",
+          "delta": -0.37777777777777777,
+          "decreased": true
+        },
+        {
+          "model": "Phi-4 14B",
+          "delta": -0.375,
+          "decreased": true
+        },
+        {
+          "model": "Gemma 3 12B",
+          "delta": -0.35,
+          "decreased": true
+        },
+        {
+          "model": "Mistral NeMo 12B",
+          "delta": -0.16388888888888886,
+          "decreased": true
+        }
+      ],
+      "parameter": [
+        {
+          "model": "Qwen2.5-14B",
+          "delta": -0.29722222222222217,
+          "decreased": true
+        },
+        {
+          "model": "Phi-4 14B",
+          "delta": -0.25,
+          "decreased": true
+        },
+        {
+          "model": "Gemma 3 12B",
+          "delta": -0.2666666666666666,
+          "decreased": true
+        },
+        {
+          "model": "Mistral NeMo 12B",
+          "delta": -0.17499999999999993,
+          "decreased": true
+        }
+      ],
+      "semantics_vs_schema": [
+        {
+          "model": "Qwen2.5-14B",
+          "abs_cap": 0.37777777777777777,
+          "abs_par": 0.29722222222222217,
+          "abs_schema": 0.01388888888888884,
+          "semantics_larger": true
+        },
+        {
+          "model": "Phi-4 14B",
+          "abs_cap": 0.375,
+          "abs_par": 0.25,
+          "abs_schema": 0.008333333333333304,
+          "semantics_larger": true
+        },
+        {
+          "model": "Gemma 3 12B",
+          "abs_cap": 0.35,
+          "abs_par": 0.2666666666666666,
+          "abs_schema": 0.005555555555555536,
+          "semantics_larger": true
+        },
+        {
+          "model": "Mistral NeMo 12B",
+          "abs_cap": 0.16388888888888886,
+          "abs_par": 0.17499999999999993,
+          "abs_schema": 0.019444444444444375,
+          "semantics_larger": true
+        }
+      ],
+      "p2": [
+        {
+          "model": "Qwen2.5-14B",
+          "full": 1.0,
+          "no_capability_semantics": 0.05,
+          "delta": -0.95,
+          "decreased": true
+        },
+        {
+          "model": "Phi-4 14B",
+          "full": 1.0,
+          "no_capability_semantics": 0.0,
+          "delta": -1.0,
+          "decreased": true
+        },
+        {
+          "model": "Gemma 3 12B",
+          "full": 1.0,
+          "no_capability_semantics": 0.0,
+          "delta": -1.0,
+          "decreased": true
+        },
+        {
+          "model": "Mistral NeMo 12B",
+          "full": 0.9,
+          "no_capability_semantics": 0.15,
+          "delta": -0.75,
+          "decreased": true
+        }
+      ],
+      "p3": [
+        {
+          "model": "Qwen2.5-14B",
+          "full": 1.0,
+          "no_parameter_semantics": 0.25,
+          "delta": -0.75,
+          "decreased": true
+        },
+        {
+          "model": "Phi-4 14B",
+          "full": 1.0,
+          "no_parameter_semantics": 0.25,
+          "delta": -0.75,
+          "decreased": true
+        },
+        {
+          "model": "Gemma 3 12B",
+          "full": 0.9,
+          "no_parameter_semantics": 0.2,
+          "delta": -0.7,
+          "decreased": true
+        },
+        {
+          "model": "Mistral NeMo 12B",
+          "full": 1.0,
+          "no_parameter_semantics": 0.25,
+          "delta": -0.75,
+          "decreased": true
+        }
+      ]
+    }
+  },
+  "deviations": []
+}

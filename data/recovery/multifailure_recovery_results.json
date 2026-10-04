@@ -1,0 +1,1315 @@
+{
+  "run_dir": "runs/multifailure_recovery/multifailure_multifailure_formal_20260824T155611Z_9fde5231",
+  "config": {
+    "run_id": "multifailure_multifailure_formal_20260824T155611Z_9fde5231",
+    "config_name": "multifailure_formal",
+    "benchmark_version_frozen": "v1.1",
+    "multifailure_config": {
+      "experiment": "multifailure_recovery_formal",
+      "benchmark_version_frozen": "v1.1",
+      "formulation": "canonical",
+      "max_execution_replans": 2,
+      "model": "qwen2.5:14b",
+      "temperature": 0,
+      "n_repeats": 2,
+      "target_episodes": 112,
+      "design": "7 conditions x 8 base tasks x 2 repeats",
+      "coverage_notes": {
+        "single_arm_action": "P2_01",
+        "parameterized_locomotion": "P3_01",
+        "two_step_physical": "P4_01",
+        "action_to_speech": "P5_01",
+        "speech_to_action": "P5_02",
+        "three_step_mixed": "P5_06",
+        "multi_step_f6": "P4_02, P5_09",
+        "locomotion_to_action_gap": "No pure locomotion->arm_action in frozen 20-task set; P5_03 is locomotion->speak"
+      },
+      "base_tasks": [
+        "P2_01",
+        "P3_01",
+        "P4_01",
+        "P5_01",
+        "P5_02",
+        "P5_06",
+        "P4_02",
+        "P5_09"
+      ],
+      "condition_task_applicability": {
+        "F1_dispatch_rejected": [
+          "P2_01",
+          "P3_01",
+          "P4_01",
+          "P5_01",
+          "P5_02",
+          "P5_06",
+          "P4_02",
+          "P5_09"
+        ],
+        "F2_execution_timeout": [
+          "P2_01",
+          "P3_01",
+          "P4_01",
+          "P5_01",
+          "P5_02",
+          "P5_06",
+          "P4_02",
+          "P5_09"
+        ],
+        "F3_partial_completion": [
+          "P2_01",
+          "P3_01",
+          "P4_01",
+          "P5_01",
+          "P5_02",
+          "P5_06",
+          "P4_02",
+          "P5_09"
+        ],
+        "F4_invalid_robot_state": [
+          "P2_01",
+          "P3_01",
+          "P4_01",
+          "P5_01",
+          "P5_02",
+          "P5_06",
+          "P4_02",
+          "P5_09"
+        ],
+        "F5_infeasible_parameter": [
+          "P2_01",
+          "P3_01",
+          "P4_01",
+          "P5_01",
+          "P5_02",
+          "P5_06",
+          "P4_02",
+          "P5_09"
+        ],
+        "F6_second_step_failure": [
+          "P4_01",
+          "P4_02",
+          "P4_05",
+          "P4_06",
+          "P5_01",
+          "P5_05",
+          "P5_06",
+          "P5_09"
+        ],
+        "F7_unrecoverable_failure": [
+          "P2_01",
+          "P3_01",
+          "P4_01",
+          "P5_01",
+          "P5_02",
+          "P5_06",
+          "P4_02",
+          "P5_09"
+        ]
+      },
+      "notes": "Formal episodes generated at run time from base_tasks x conditions x repeat_id in {0,1}. NOT executed during smoke stage."
+    },
+    "n_episodes": 112,
+    "failure_conditions": [
+      "F1_dispatch_rejected",
+      "F2_execution_timeout",
+      "F3_partial_completion",
+      "F4_invalid_robot_state",
+      "F5_infeasible_parameter",
+      "F6_second_step_failure",
+      "F7_unrecoverable_failure"
+    ]
+  },
+  "metrics": {
+    "n_episodes": 112,
+    "n_injected": 108,
+    "m1_recovery_success_rate": {
+      "overall": {
+        "numerator": 72,
+        "denominator": 92,
+        "rate_percent": 78.26086956521739
+      },
+      "by_condition": {
+        "F1_dispatch_rejected": {
+          "numerator": 16,
+          "denominator": 16,
+          "rate": 100.0
+        },
+        "F2_execution_timeout": {
+          "numerator": 16,
+          "denominator": 16,
+          "rate": 100.0
+        },
+        "F3_partial_completion": {
+          "numerator": 16,
+          "denominator": 16,
+          "rate": 100.0
+        },
+        "F4_invalid_robot_state": {
+          "numerator": 12,
+          "denominator": 16,
+          "rate": 75.0
+        },
+        "F5_infeasible_parameter": {
+          "numerator": 10,
+          "denominator": 16,
+          "rate": 62.5
+        },
+        "F6_second_step_failure": {
+          "numerator": 2,
+          "denominator": 12,
+          "rate": 16.666666666666668
+        }
+      }
+    },
+    "m2_correct_termination_rate": {
+      "numerator": 6,
+      "denominator": 16,
+      "rate_percent": 37.5
+    },
+    "m3_repeated_action_rate": {
+      "numerator": 10,
+      "denominator": 42,
+      "rate_percent": 23.80952380952381
+    },
+    "m4_incorrect_recovery_rate": {
+      "numerator": 20,
+      "denominator": 92,
+      "rate_percent": 21.73913043478261,
+      "reason_counts": {
+        "missing_required_step_after_recovery": 10,
+        "wrong_parameter_after_recovery": 12,
+        "unnecessary_repeat_of_completed_action": 10
+      }
+    },
+    "m5_added_recovery_latency_ms": {
+      "median": 837.6077841967344,
+      "p95": 1230.3364682011306,
+      "mean": 845.4465572874102,
+      "n": 92
+    },
+    "m6_replanning_attempts": {
+      "mean": 1.0,
+      "histogram": {
+        "1": 92
+      },
+      "recovered_within_1": 72,
+      "recovered_within_2": 72,
+      "recovered_within_3": 72,
+      "failed_after_allowed_attempts": 20
+    }
+  },
+  "sanity_checks": [
+    {
+      "check_id": "1_each_condition_injected",
+      "passed": true,
+      "detail": "seen=['F1_dispatch_rejected', 'F2_execution_timeout', 'F3_partial_completion', 'F4_invalid_robot_state', 'F5_infeasible_parameter', 'F6_second_step_failure', 'F7_unrecoverable_failure']"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F1_dispatch_rejected_P2_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F1_dispatch_rejected_P2_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F1_dispatch_rejected_P3_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F1_dispatch_rejected_P3_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F1_dispatch_rejected_P4_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F1_dispatch_rejected_P4_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F1_dispatch_rejected_P5_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F1_dispatch_rejected_P5_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F1_dispatch_rejected_P5_02",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F1_dispatch_rejected_P5_02",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F1_dispatch_rejected_P5_06",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F1_dispatch_rejected_P5_06",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F1_dispatch_rejected_P4_02",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F1_dispatch_rejected_P4_02",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F1_dispatch_rejected_P5_09",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F1_dispatch_rejected_P5_09",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F2_execution_timeout_P2_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "3_f2_no_real_sleep_P2_01",
+      "passed": true,
+      "detail": "simulated timeout only; no sleep in runner"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F2_execution_timeout_P2_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "3_f2_no_real_sleep_P2_01",
+      "passed": true,
+      "detail": "simulated timeout only; no sleep in runner"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F2_execution_timeout_P3_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "3_f2_no_real_sleep_P3_01",
+      "passed": true,
+      "detail": "simulated timeout only; no sleep in runner"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F2_execution_timeout_P3_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "3_f2_no_real_sleep_P3_01",
+      "passed": true,
+      "detail": "simulated timeout only; no sleep in runner"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F2_execution_timeout_P4_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "3_f2_no_real_sleep_P4_01",
+      "passed": true,
+      "detail": "simulated timeout only; no sleep in runner"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F2_execution_timeout_P4_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "3_f2_no_real_sleep_P4_01",
+      "passed": true,
+      "detail": "simulated timeout only; no sleep in runner"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F2_execution_timeout_P5_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "3_f2_no_real_sleep_P5_01",
+      "passed": true,
+      "detail": "simulated timeout only; no sleep in runner"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F2_execution_timeout_P5_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "3_f2_no_real_sleep_P5_01",
+      "passed": true,
+      "detail": "simulated timeout only; no sleep in runner"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F2_execution_timeout_P5_02",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "3_f2_no_real_sleep_P5_02",
+      "passed": true,
+      "detail": "simulated timeout only; no sleep in runner"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F2_execution_timeout_P5_02",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "3_f2_no_real_sleep_P5_02",
+      "passed": true,
+      "detail": "simulated timeout only; no sleep in runner"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F2_execution_timeout_P5_06",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "3_f2_no_real_sleep_P5_06",
+      "passed": true,
+      "detail": "simulated timeout only; no sleep in runner"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F2_execution_timeout_P5_06",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "3_f2_no_real_sleep_P5_06",
+      "passed": true,
+      "detail": "simulated timeout only; no sleep in runner"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F2_execution_timeout_P4_02",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "3_f2_no_real_sleep_P4_02",
+      "passed": true,
+      "detail": "simulated timeout only; no sleep in runner"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F2_execution_timeout_P4_02",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "3_f2_no_real_sleep_P4_02",
+      "passed": true,
+      "detail": "simulated timeout only; no sleep in runner"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F2_execution_timeout_P5_09",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "3_f2_no_real_sleep_P5_09",
+      "passed": true,
+      "detail": "simulated timeout only; no sleep in runner"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F2_execution_timeout_P5_09",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "3_f2_no_real_sleep_P5_09",
+      "passed": true,
+      "detail": "simulated timeout only; no sleep in runner"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F3_partial_completion_P2_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "4_f3_partial_flags_P2_01",
+      "passed": true,
+      "detail": "partial=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F3_partial_completion_P2_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "4_f3_partial_flags_P2_01",
+      "passed": true,
+      "detail": "partial=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F3_partial_completion_P3_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "4_f3_partial_flags_P3_01",
+      "passed": true,
+      "detail": "partial=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F3_partial_completion_P3_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "4_f3_partial_flags_P3_01",
+      "passed": true,
+      "detail": "partial=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F3_partial_completion_P4_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "4_f3_partial_flags_P4_01",
+      "passed": true,
+      "detail": "partial=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F3_partial_completion_P4_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "4_f3_partial_flags_P4_01",
+      "passed": true,
+      "detail": "partial=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F3_partial_completion_P5_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "4_f3_partial_flags_P5_01",
+      "passed": true,
+      "detail": "partial=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F3_partial_completion_P5_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "4_f3_partial_flags_P5_01",
+      "passed": true,
+      "detail": "partial=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F3_partial_completion_P5_02",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "4_f3_partial_flags_P5_02",
+      "passed": true,
+      "detail": "partial=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F3_partial_completion_P5_02",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "4_f3_partial_flags_P5_02",
+      "passed": true,
+      "detail": "partial=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F3_partial_completion_P5_06",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "4_f3_partial_flags_P5_06",
+      "passed": true,
+      "detail": "partial=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F3_partial_completion_P5_06",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "4_f3_partial_flags_P5_06",
+      "passed": true,
+      "detail": "partial=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F3_partial_completion_P4_02",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "4_f3_partial_flags_P4_02",
+      "passed": true,
+      "detail": "partial=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F3_partial_completion_P4_02",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "4_f3_partial_flags_P4_02",
+      "passed": true,
+      "detail": "partial=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F3_partial_completion_P5_09",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "4_f3_partial_flags_P5_09",
+      "passed": true,
+      "detail": "partial=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F3_partial_completion_P5_09",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "4_f3_partial_flags_P5_09",
+      "passed": true,
+      "detail": "partial=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F4_invalid_robot_state_P2_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "5_f4_no_silent_execute_P2_01",
+      "passed": true,
+      "detail": "failed_idx=0 completed_len=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F4_invalid_robot_state_P2_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "5_f4_no_silent_execute_P2_01",
+      "passed": true,
+      "detail": "failed_idx=0 completed_len=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F4_invalid_robot_state_P3_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "5_f4_no_silent_execute_P3_01",
+      "passed": true,
+      "detail": "failed_idx=0 completed_len=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F4_invalid_robot_state_P3_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "5_f4_no_silent_execute_P3_01",
+      "passed": true,
+      "detail": "failed_idx=0 completed_len=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F4_invalid_robot_state_P4_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "5_f4_no_silent_execute_P4_01",
+      "passed": true,
+      "detail": "failed_idx=0 completed_len=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F4_invalid_robot_state_P4_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "5_f4_no_silent_execute_P4_01",
+      "passed": true,
+      "detail": "failed_idx=0 completed_len=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F4_invalid_robot_state_P5_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "5_f4_no_silent_execute_P5_01",
+      "passed": true,
+      "detail": "failed_idx=0 completed_len=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F4_invalid_robot_state_P5_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "5_f4_no_silent_execute_P5_01",
+      "passed": true,
+      "detail": "failed_idx=0 completed_len=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F4_invalid_robot_state_P5_02",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "5_f4_no_silent_execute_P5_02",
+      "passed": true,
+      "detail": "failed_idx=1 completed_len=1"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F4_invalid_robot_state_P5_02",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "5_f4_no_silent_execute_P5_02",
+      "passed": true,
+      "detail": "failed_idx=1 completed_len=1"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F4_invalid_robot_state_P5_06",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "5_f4_no_silent_execute_P5_06",
+      "passed": true,
+      "detail": "failed_idx=1 completed_len=1"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F4_invalid_robot_state_P5_06",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "5_f4_no_silent_execute_P5_06",
+      "passed": true,
+      "detail": "failed_idx=1 completed_len=1"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F4_invalid_robot_state_P4_02",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "5_f4_no_silent_execute_P4_02",
+      "passed": true,
+      "detail": "failed_idx=0 completed_len=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F4_invalid_robot_state_P4_02",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "5_f4_no_silent_execute_P4_02",
+      "passed": true,
+      "detail": "failed_idx=0 completed_len=0"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F4_invalid_robot_state_P5_09",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "5_f4_no_silent_execute_P5_09",
+      "passed": true,
+      "detail": "failed_idx=1 completed_len=1"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F4_invalid_robot_state_P5_09",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "5_f4_no_silent_execute_P5_09",
+      "passed": true,
+      "detail": "failed_idx=1 completed_len=1"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F5_infeasible_parameter_P2_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "6_f5_instruction_preserved_P2_01",
+      "passed": true,
+      "detail": "instruction unchanged"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F5_infeasible_parameter_P2_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "6_f5_instruction_preserved_P2_01",
+      "passed": true,
+      "detail": "instruction unchanged"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F5_infeasible_parameter_P3_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "6_f5_instruction_preserved_P3_01",
+      "passed": true,
+      "detail": "instruction unchanged"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F5_infeasible_parameter_P3_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "6_f5_instruction_preserved_P3_01",
+      "passed": true,
+      "detail": "instruction unchanged"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F5_infeasible_parameter_P4_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "6_f5_instruction_preserved_P4_01",
+      "passed": true,
+      "detail": "instruction unchanged"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F5_infeasible_parameter_P4_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "6_f5_instruction_preserved_P4_01",
+      "passed": true,
+      "detail": "instruction unchanged"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F5_infeasible_parameter_P5_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "6_f5_instruction_preserved_P5_01",
+      "passed": true,
+      "detail": "instruction unchanged"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F5_infeasible_parameter_P5_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "6_f5_instruction_preserved_P5_01",
+      "passed": true,
+      "detail": "instruction unchanged"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F5_infeasible_parameter_P5_02",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "6_f5_instruction_preserved_P5_02",
+      "passed": true,
+      "detail": "instruction unchanged"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F5_infeasible_parameter_P5_02",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "6_f5_instruction_preserved_P5_02",
+      "passed": true,
+      "detail": "instruction unchanged"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F5_infeasible_parameter_P5_06",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "6_f5_instruction_preserved_P5_06",
+      "passed": true,
+      "detail": "instruction unchanged"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F5_infeasible_parameter_P5_06",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "6_f5_instruction_preserved_P5_06",
+      "passed": true,
+      "detail": "instruction unchanged"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F5_infeasible_parameter_P4_02",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "6_f5_instruction_preserved_P4_02",
+      "passed": true,
+      "detail": "instruction unchanged"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F5_infeasible_parameter_P4_02",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "6_f5_instruction_preserved_P4_02",
+      "passed": true,
+      "detail": "instruction unchanged"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F5_infeasible_parameter_P5_09",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "6_f5_instruction_preserved_P5_09",
+      "passed": true,
+      "detail": "instruction unchanged"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F5_infeasible_parameter_P5_09",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "6_f5_instruction_preserved_P5_09",
+      "passed": true,
+      "detail": "instruction unchanged"
+    },
+    {
+      "check_id": "7_f6_second_step_P4_01",
+      "passed": true,
+      "detail": "idx=1 completed=1"
+    },
+    {
+      "check_id": "8_f6_first_step_preserved_P4_01",
+      "passed": true,
+      "detail": "completed_before=1"
+    },
+    {
+      "check_id": "7_f6_second_step_P4_01",
+      "passed": true,
+      "detail": "idx=1 completed=1"
+    },
+    {
+      "check_id": "8_f6_first_step_preserved_P4_01",
+      "passed": true,
+      "detail": "completed_before=1"
+    },
+    {
+      "check_id": "7_f6_second_step_P4_02",
+      "passed": true,
+      "detail": "idx=1 completed=1"
+    },
+    {
+      "check_id": "8_f6_first_step_preserved_P4_02",
+      "passed": true,
+      "detail": "completed_before=1"
+    },
+    {
+      "check_id": "7_f6_second_step_P4_02",
+      "passed": true,
+      "detail": "idx=1 completed=1"
+    },
+    {
+      "check_id": "8_f6_first_step_preserved_P4_02",
+      "passed": true,
+      "detail": "completed_before=1"
+    },
+    {
+      "check_id": "7_f6_second_step_P4_05",
+      "passed": true,
+      "detail": "idx=1 completed=1"
+    },
+    {
+      "check_id": "8_f6_first_step_preserved_P4_05",
+      "passed": true,
+      "detail": "completed_before=1"
+    },
+    {
+      "check_id": "7_f6_second_step_P4_05",
+      "passed": true,
+      "detail": "idx=1 completed=1"
+    },
+    {
+      "check_id": "8_f6_first_step_preserved_P4_05",
+      "passed": true,
+      "detail": "completed_before=1"
+    },
+    {
+      "check_id": "7_f6_second_step_P4_06",
+      "passed": true,
+      "detail": "idx=1 completed=1"
+    },
+    {
+      "check_id": "8_f6_first_step_preserved_P4_06",
+      "passed": true,
+      "detail": "completed_before=1"
+    },
+    {
+      "check_id": "7_f6_second_step_P4_06",
+      "passed": true,
+      "detail": "idx=1 completed=1"
+    },
+    {
+      "check_id": "8_f6_first_step_preserved_P4_06",
+      "passed": true,
+      "detail": "completed_before=1"
+    },
+    {
+      "check_id": "7_f6_second_step_P5_05",
+      "passed": true,
+      "detail": "idx=2 completed=2"
+    },
+    {
+      "check_id": "8_f6_first_step_preserved_P5_05",
+      "passed": true,
+      "detail": "completed_before=2"
+    },
+    {
+      "check_id": "7_f6_second_step_P5_05",
+      "passed": true,
+      "detail": "idx=2 completed=2"
+    },
+    {
+      "check_id": "8_f6_first_step_preserved_P5_05",
+      "passed": true,
+      "detail": "completed_before=2"
+    },
+    {
+      "check_id": "7_f6_second_step_P5_09",
+      "passed": true,
+      "detail": "idx=2 completed=2"
+    },
+    {
+      "check_id": "8_f6_first_step_preserved_P5_09",
+      "passed": true,
+      "detail": "completed_before=2"
+    },
+    {
+      "check_id": "7_f6_second_step_P5_09",
+      "passed": true,
+      "detail": "idx=2 completed=2"
+    },
+    {
+      "check_id": "8_f6_first_step_preserved_P5_09",
+      "passed": true,
+      "detail": "completed_before=2"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F7_unrecoverable_failure_P2_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "10_f7_excluded_from_recovery_success_P2_01",
+      "passed": true,
+      "detail": "F7 recovery_success must be false"
+    },
+    {
+      "check_id": "11_f7_correct_termination_tracked_P2_01",
+      "passed": true,
+      "detail": "correct_termination=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F7_unrecoverable_failure_P2_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "10_f7_excluded_from_recovery_success_P2_01",
+      "passed": true,
+      "detail": "F7 recovery_success must be false"
+    },
+    {
+      "check_id": "11_f7_correct_termination_tracked_P2_01",
+      "passed": true,
+      "detail": "correct_termination=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F7_unrecoverable_failure_P3_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "10_f7_excluded_from_recovery_success_P3_01",
+      "passed": true,
+      "detail": "F7 recovery_success must be false"
+    },
+    {
+      "check_id": "11_f7_correct_termination_tracked_P3_01",
+      "passed": true,
+      "detail": "correct_termination=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F7_unrecoverable_failure_P3_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "10_f7_excluded_from_recovery_success_P3_01",
+      "passed": true,
+      "detail": "F7 recovery_success must be false"
+    },
+    {
+      "check_id": "11_f7_correct_termination_tracked_P3_01",
+      "passed": true,
+      "detail": "correct_termination=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F7_unrecoverable_failure_P4_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "10_f7_excluded_from_recovery_success_P4_01",
+      "passed": true,
+      "detail": "F7 recovery_success must be false"
+    },
+    {
+      "check_id": "11_f7_correct_termination_tracked_P4_01",
+      "passed": true,
+      "detail": "correct_termination=False"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F7_unrecoverable_failure_P4_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "10_f7_excluded_from_recovery_success_P4_01",
+      "passed": true,
+      "detail": "F7 recovery_success must be false"
+    },
+    {
+      "check_id": "11_f7_correct_termination_tracked_P4_01",
+      "passed": true,
+      "detail": "correct_termination=False"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F7_unrecoverable_failure_P5_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "10_f7_excluded_from_recovery_success_P5_01",
+      "passed": true,
+      "detail": "F7 recovery_success must be false"
+    },
+    {
+      "check_id": "11_f7_correct_termination_tracked_P5_01",
+      "passed": true,
+      "detail": "correct_termination=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F7_unrecoverable_failure_P5_01",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "10_f7_excluded_from_recovery_success_P5_01",
+      "passed": true,
+      "detail": "F7 recovery_success must be false"
+    },
+    {
+      "check_id": "11_f7_correct_termination_tracked_P5_01",
+      "passed": true,
+      "detail": "correct_termination=True"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F7_unrecoverable_failure_P5_02",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "10_f7_excluded_from_recovery_success_P5_02",
+      "passed": true,
+      "detail": "F7 recovery_success must be false"
+    },
+    {
+      "check_id": "11_f7_correct_termination_tracked_P5_02",
+      "passed": true,
+      "detail": "correct_termination=False"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F7_unrecoverable_failure_P5_02",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "10_f7_excluded_from_recovery_success_P5_02",
+      "passed": true,
+      "detail": "F7 recovery_success must be false"
+    },
+    {
+      "check_id": "11_f7_correct_termination_tracked_P5_02",
+      "passed": true,
+      "detail": "correct_termination=False"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F7_unrecoverable_failure_P5_06",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "10_f7_excluded_from_recovery_success_P5_06",
+      "passed": true,
+      "detail": "F7 recovery_success must be false"
+    },
+    {
+      "check_id": "11_f7_correct_termination_tracked_P5_06",
+      "passed": true,
+      "detail": "correct_termination=False"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F7_unrecoverable_failure_P5_06",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "10_f7_excluded_from_recovery_success_P5_06",
+      "passed": true,
+      "detail": "F7 recovery_success must be false"
+    },
+    {
+      "check_id": "11_f7_correct_termination_tracked_P5_06",
+      "passed": true,
+      "detail": "correct_termination=False"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F7_unrecoverable_failure_P4_02",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "10_f7_excluded_from_recovery_success_P4_02",
+      "passed": true,
+      "detail": "F7 recovery_success must be false"
+    },
+    {
+      "check_id": "11_f7_correct_termination_tracked_P4_02",
+      "passed": true,
+      "detail": "correct_termination=False"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F7_unrecoverable_failure_P4_02",
+      "passed": true,
+      "detail": "idx=0"
+    },
+    {
+      "check_id": "10_f7_excluded_from_recovery_success_P4_02",
+      "passed": true,
+      "detail": "F7 recovery_success must be false"
+    },
+    {
+      "check_id": "11_f7_correct_termination_tracked_P4_02",
+      "passed": true,
+      "detail": "correct_termination=False"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F7_unrecoverable_failure_P5_09",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "10_f7_excluded_from_recovery_success_P5_09",
+      "passed": true,
+      "detail": "F7 recovery_success must be false"
+    },
+    {
+      "check_id": "11_f7_correct_termination_tracked_P5_09",
+      "passed": true,
+      "detail": "correct_termination=False"
+    },
+    {
+      "check_id": "2_f1_f5_f7_before_completion_F7_unrecoverable_failure_P5_09",
+      "passed": true,
+      "detail": "idx=1"
+    },
+    {
+      "check_id": "10_f7_excluded_from_recovery_success_P5_09",
+      "passed": true,
+      "detail": "F7 recovery_success must be false"
+    },
+    {
+      "check_id": "11_f7_correct_termination_tracked_P5_09",
+      "passed": true,
+      "detail": "correct_termination=False"
+    },
+    {
+      "check_id": "9_repeated_action_detectable",
+      "passed": true,
+      "detail": "field present on all records"
+    },
+    {
+      "check_id": "12_same_recovery_pathway",
+      "passed": true,
+      "detail": "replan_attempts recorded for injected episodes"
+    },
+    {
+      "check_id": "13_no_hardcoded_recovery_answers",
+      "passed": true,
+      "detail": "runner reuses _replan_remaining without condition-specific overrides"
+    },
+    {
+      "check_id": "14_production_unchanged",
+      "passed": true,
+      "detail": "no edits to planner prompt, catalog, schema, or baseline recovery_runner"
+    },
+    {
+      "check_id": "15_baseline_recovery_unchanged",
+      "passed": true,
+      "detail": "recovery_runner.py and failure_injection.py not modified"
+    }
+  ],
+  "n_episodes": 112,
+  "sanity_pass_rate": 1.0
+}

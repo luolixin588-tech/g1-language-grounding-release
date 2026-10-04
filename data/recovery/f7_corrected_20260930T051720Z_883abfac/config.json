@@ -1,0 +1,37 @@
+{
+  "run_id": "multifailure_multifailure_f7_corrected_20260930T051720Z_883abfac",
+  "config_name": "multifailure_f7_corrected",
+  "benchmark_version_frozen": "v1.1",
+  "multifailure_config": {
+    "experiment": "multifailure_f7_corrected",
+    "benchmark_version_frozen": "v1.1",
+    "formulation": "canonical",
+    "max_execution_replans": 2,
+    "model": "qwen2.5:14b",
+    "temperature": 0,
+    "n_repeats": 2,
+    "notes": "F7-only rerun after unrecoverable prompt correction. Same 8 base tasks and 2 repeats as formal F7. Does not overwrite the formal multifailure run.",
+    "condition_task_applicability": {
+      "F7_unrecoverable_failure": [
+        "P2_01",
+        "P3_01",
+        "P4_01",
+        "P5_01",
+        "P5_02",
+        "P5_06",
+        "P4_02",
+        "P5_09"
+      ]
+    }
+  },
+  "n_episodes": 16,
+  "failure_conditions": [
+    "F1_dispatch_rejected",
+    "F2_execution_timeout",
+    "F3_partial_completion",
+    "F4_invalid_robot_state",
+    "F5_infeasible_parameter",
+    "F6_second_step_failure",
+    "F7_unrecoverable_failure"
+  ]
+}

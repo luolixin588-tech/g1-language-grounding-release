@@ -1,0 +1,41 @@
+{
+  "experiment": "multifailure_recovery_formal",
+  "benchmark_version_frozen": "v1.1",
+  "formulation": "canonical",
+  "max_execution_replans": 2,
+  "model": "qwen2.5:14b",
+  "temperature": 0,
+  "n_repeats": 2,
+  "target_episodes": 112,
+  "design": "7 conditions x 8 base tasks x 2 repeats",
+  "coverage_notes": {
+    "single_arm_action": "P2_01",
+    "parameterized_locomotion": "P3_01",
+    "two_step_physical": "P4_01",
+    "action_to_speech": "P5_01",
+    "speech_to_action": "P5_02",
+    "three_step_mixed": "P5_06",
+    "multi_step_f6": "P4_02, P5_09",
+    "locomotion_to_action_gap": "No pure locomotion->arm_action in frozen 20-task set; P5_03 is locomotion->speak"
+  },
+  "base_tasks": [
+    "P2_01",
+    "P3_01",
+    "P4_01",
+    "P5_01",
+    "P5_02",
+    "P5_06",
+    "P4_02",
+    "P5_09"
+  ],
+  "condition_task_applicability": {
+    "F1_dispatch_rejected": ["P2_01", "P3_01", "P4_01", "P5_01", "P5_02", "P5_06", "P4_02", "P5_09"],
+    "F2_execution_timeout": ["P2_01", "P3_01", "P4_01", "P5_01", "P5_02", "P5_06", "P4_02", "P5_09"],
+    "F3_partial_completion": ["P2_01", "P3_01", "P4_01", "P5_01", "P5_02", "P5_06", "P4_02", "P5_09"],
+    "F4_invalid_robot_state": ["P2_01", "P3_01", "P4_01", "P5_01", "P5_02", "P5_06", "P4_02", "P5_09"],
+    "F5_infeasible_parameter": ["P2_01", "P3_01", "P4_01", "P5_01", "P5_02", "P5_06", "P4_02", "P5_09"],
+    "F6_second_step_failure": ["P4_01", "P4_02", "P4_05", "P4_06", "P5_01", "P5_05", "P5_06", "P5_09"],
+    "F7_unrecoverable_failure": ["P2_01", "P3_01", "P4_01", "P5_01", "P5_02", "P5_06", "P4_02", "P5_09"]
+  },
+  "notes": "Formal episodes generated at run time from base_tasks x conditions x repeat_id in {0,1}. NOT executed during smoke stage."
+}

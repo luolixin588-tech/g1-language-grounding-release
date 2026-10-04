@@ -1,0 +1,18 @@
+{
+  "benchmark_version": "v1.1",
+  "condition": {
+    "name": "reduced_capability_info",
+    "description": "Structured generation with names-only capability information.",
+    "model": "qwen2.5:14b",
+    "temperature": 0,
+    "use_json_schema": true,
+    "use_validation_retries": true,
+    "max_attempts": 3,
+    "reduced_capability_info": true
+  },
+  "n_jobs": 360,
+  "n_instructions": 120,
+  "n_repeats": 3,
+  "seed": 0,
+  "smoke": false
+}

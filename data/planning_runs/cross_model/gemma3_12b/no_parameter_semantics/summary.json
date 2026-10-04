@@ -1,0 +1,83 @@
+{
+  "run_id": "no_parameter_semantics",
+  "condition": "no_parameter_semantics",
+  "benchmark_version": "v1.1",
+  "n_runs": 360,
+  "n_instructions": 120,
+  "task_success_rate": 0.6833333333333333,
+  "n_task_success": 246,
+  "plan_validity_rate": 1.0,
+  "n_plan_valid": 360,
+  "planning_latency_ms": {
+    "median": 955.5474975059042,
+    "p95": 1985.5227453968837,
+    "mean": 1125.9564112415117
+  },
+  "success_by_family": {
+    "P1_spoken_response": {
+      "n": 60,
+      "task_success_rate": 1.0,
+      "plan_validity_rate": 1.0,
+      "capability_selection_accuracy": 1.0,
+      "parameter_accuracy": 1.0,
+      "order_accuracy": 1.0
+    },
+    "P2_single_physical_action": {
+      "n": 60,
+      "task_success_rate": 0.95,
+      "plan_validity_rate": 1.0,
+      "capability_selection_accuracy": 0.95,
+      "parameter_accuracy": 0.95,
+      "order_accuracy": 1.0
+    },
+    "P3_parameterized_control": {
+      "n": 60,
+      "task_success_rate": 0.2,
+      "plan_validity_rate": 1.0,
+      "capability_selection_accuracy": 0.5,
+      "parameter_accuracy": 0.2,
+      "order_accuracy": 1.0
+    },
+    "P4_multistep_physical_sequence": {
+      "n": 60,
+      "task_success_rate": 0.35,
+      "plan_validity_rate": 1.0,
+      "capability_selection_accuracy": 0.7333333333333333,
+      "parameter_accuracy": 0.8416666666666667,
+      "order_accuracy": 0.6666666666666666
+    },
+    "P5_mixed_speech_action_sequence": {
+      "n": 60,
+      "task_success_rate": 0.6,
+      "plan_validity_rate": 1.0,
+      "capability_selection_accuracy": 0.9041666666666667,
+      "parameter_accuracy": 1.0,
+      "order_accuracy": 0.6833333333333333
+    },
+    "P6_unsupported_or_constrained": {
+      "n": 60,
+      "task_success_rate": 1.0,
+      "plan_validity_rate": 1.0,
+      "capability_selection_accuracy": 1.0,
+      "parameter_accuracy": 1.0,
+      "order_accuracy": 1.0
+    }
+  },
+  "success_by_formulation": {
+    "canonical": {
+      "n": 180,
+      "task_success_rate": 0.6666666666666666
+    },
+    "paraphrase": {
+      "n": 180,
+      "task_success_rate": 0.7
+    }
+  },
+  "n_instructions_success_all_repeats": 82,
+  "n_instructions_with_three_repeats": 120,
+  "diagnostics": {
+    "capability_selection_accuracy": 0.8479166666666667,
+    "parameter_accuracy": 0.8319444444444445,
+    "order_accuracy": 0.8916666666666667
+  }
+}

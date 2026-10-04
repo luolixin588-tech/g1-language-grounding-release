@@ -1,0 +1,267 @@
+{
+  "ok": true,
+  "n_issues": 0,
+  "issues": [],
+  "cells": [
+    {
+      "model_id": "qwen2.5_14b",
+      "condition": "full",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "qwen2.5:14b"
+      ],
+      "conditions_in_records": [
+        "full"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "qwen2.5_14b",
+      "condition": "reduced_capability_info",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "qwen2.5:14b"
+      ],
+      "conditions_in_records": [
+        "reduced_capability_info"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "qwen2.5_14b",
+      "condition": "no_capability_semantics",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "qwen2.5:14b"
+      ],
+      "conditions_in_records": [
+        "no_capability_semantics"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "qwen2.5_14b",
+      "condition": "no_parameter_semantics",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "qwen2.5:14b"
+      ],
+      "conditions_in_records": [
+        "no_parameter_semantics"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "qwen2.5_14b",
+      "condition": "no_schema_constrained_decoding",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "qwen2.5:14b"
+      ],
+      "conditions_in_records": [
+        "no_structure"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "phi4_14b",
+      "condition": "full",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "phi4:14b"
+      ],
+      "conditions_in_records": [
+        "full"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "phi4_14b",
+      "condition": "reduced_capability_info",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "phi4:14b"
+      ],
+      "conditions_in_records": [
+        "reduced_capability_info"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "phi4_14b",
+      "condition": "no_capability_semantics",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "phi4:14b"
+      ],
+      "conditions_in_records": [
+        "no_capability_semantics"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "phi4_14b",
+      "condition": "no_parameter_semantics",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "phi4:14b"
+      ],
+      "conditions_in_records": [
+        "no_parameter_semantics"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "phi4_14b",
+      "condition": "no_schema_constrained_decoding",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "phi4:14b"
+      ],
+      "conditions_in_records": [
+        "no_schema_constrained_decoding"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "gemma3_12b",
+      "condition": "full",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "gemma3:12b"
+      ],
+      "conditions_in_records": [
+        "full"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "gemma3_12b",
+      "condition": "reduced_capability_info",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "gemma3:12b"
+      ],
+      "conditions_in_records": [
+        "reduced_capability_info"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "gemma3_12b",
+      "condition": "no_capability_semantics",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "gemma3:12b"
+      ],
+      "conditions_in_records": [
+        "no_capability_semantics"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "gemma3_12b",
+      "condition": "no_parameter_semantics",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "gemma3:12b"
+      ],
+      "conditions_in_records": [
+        "no_parameter_semantics"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "gemma3_12b",
+      "condition": "no_schema_constrained_decoding",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "gemma3:12b"
+      ],
+      "conditions_in_records": [
+        "no_schema_constrained_decoding"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "mistral_nemo_12b",
+      "condition": "full",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "mistral-nemo:12b"
+      ],
+      "conditions_in_records": [
+        "full"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "mistral_nemo_12b",
+      "condition": "reduced_capability_info",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "mistral-nemo:12b"
+      ],
+      "conditions_in_records": [
+        "reduced_capability_info"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "mistral_nemo_12b",
+      "condition": "no_capability_semantics",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "mistral-nemo:12b"
+      ],
+      "conditions_in_records": [
+        "no_capability_semantics"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "mistral_nemo_12b",
+      "condition": "no_parameter_semantics",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "mistral-nemo:12b"
+      ],
+      "conditions_in_records": [
+        "no_parameter_semantics"
+      ],
+      "issues": []
+    },
+    {
+      "model_id": "mistral_nemo_12b",
+      "condition": "no_schema_constrained_decoding",
+      "n_runs": 360,
+      "n_instructions": 120,
+      "models_in_records": [
+        "mistral-nemo:12b"
+      ],
+      "conditions_in_records": [
+        "no_schema_constrained_decoding"
+      ],
+      "issues": []
+    }
+  ]
+}

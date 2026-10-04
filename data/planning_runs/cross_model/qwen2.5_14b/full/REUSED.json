@@ -1,0 +1,11 @@
+{
+  "reused": true,
+  "decision": "A",
+  "reason": "Code change only parameterized model selection and added metadata. Prompt, schema, catalog, dataset v1.1, evaluator, and Ollama tag match the frozen Qwen formal runs. Original runs did not store digest.",
+  "source_run": "data/planning_runs/qwen2.5_14b/full/full_20260821T051022Z_d81f78bf",
+  "model_id": "qwen2.5_14b",
+  "ollama_tag": "qwen2.5:14b",
+  "paper_condition": "full",
+  "benchmark_version": "v1.1",
+  "source_run_original": "<original-repo>/runs/full/full_20260821T051022Z_d81f78bf"
+}

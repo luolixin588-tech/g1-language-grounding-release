@@ -1,0 +1,241 @@
+{
+  "document": "multifailure_recovery_final_summary",
+  "generated_at": "2026-08-25T03:06:22.977246+00:00",
+  "benchmark_version": "v1.1",
+  "model": "qwen2.5:14b",
+  "temperature": 0,
+  "max_execution_replans": 2,
+  "pool_definition": {
+    "description": "Final recoverable pool: formal F1-F5 + new-prompt F6 rerun injected episodes",
+    "excluded": [
+      "original formal F6 records",
+      "F7 unrecoverable episodes from recoverable pool",
+      "four configured but non-injected F6 episodes"
+    ],
+    "sources": {
+      "F1_F5": "runs/multifailure_recovery/multifailure_multifailure_formal_20260824T155611Z_9fde5231",
+      "F6": "runs/multifailure_recovery/multifailure_multifailure_f6_rerun_20260825T021403Z_306314eb",
+      "F7_reporting_only": "runs/multifailure_recovery/multifailure_multifailure_formal_20260824T155611Z_9fde5231"
+    }
+  },
+  "episode_count_verification": {
+    "F1_dispatch_rejected": 16,
+    "F2_execution_timeout": 16,
+    "F3_partial_completion": 16,
+    "F4_invalid_robot_state": 16,
+    "F5_infeasible_parameter": 16,
+    "F6_second_step_failure_new_prompt": 12,
+    "total_recoverable": 92,
+    "verified": true
+  },
+  "n_recoverable_episodes": 92,
+  "recovery_success": {
+    "n": 74,
+    "denominator": 92,
+    "rate": 0.804
+  },
+  "incorrect_recovery": {
+    "n": 18,
+    "denominator": 92,
+    "rate": 0.196,
+    "reason_counts": {
+      "missing_required_step_after_recovery": 10,
+      "wrong_parameter_after_recovery": 10,
+      "unnecessary_repeat_of_completed_action": 8
+    }
+  },
+  "repeated_action_rate": {
+    "n": 8,
+    "denominator": 12,
+    "rate": 0.667
+  },
+  "added_recovery_latency_ms": {
+    "n": 92,
+    "median": 837.608,
+    "p95": 1432.934,
+    "mean": 873.571,
+    "min": 501.606,
+    "max": 1755.812
+  },
+  "mean_replanning_attempts": 1.0,
+  "f7_correct_termination": {
+    "n": 6,
+    "denominator": 16,
+    "rate": 0.375,
+    "source": "original formal run only; excluded from recoverable pool"
+  },
+  "per_condition_table_final": [
+    {
+      "condition_id": "F1_dispatch_rejected",
+      "label": "Dispatch rejected",
+      "applicable_episodes": 16,
+      "recovery_or_handling": {
+        "metric": "recovery_success_rate",
+        "numerator": 16,
+        "denominator": 16,
+        "rate": 1.0
+      },
+      "repeated_action": {
+        "numerator": 0,
+        "denominator": 0,
+        "display": "0/0"
+      },
+      "incorrect_recovery": {
+        "numerator": 0,
+        "denominator": 16,
+        "display": "0/16"
+      }
+    },
+    {
+      "condition_id": "F2_execution_timeout",
+      "label": "Execution timeout",
+      "applicable_episodes": 16,
+      "recovery_or_handling": {
+        "metric": "recovery_success_rate",
+        "numerator": 16,
+        "denominator": 16,
+        "rate": 1.0
+      },
+      "repeated_action": {
+        "numerator": 0,
+        "denominator": 0,
+        "display": "0/0"
+      },
+      "incorrect_recovery": {
+        "numerator": 0,
+        "denominator": 16,
+        "display": "0/16"
+      }
+    },
+    {
+      "condition_id": "F3_partial_completion",
+      "label": "Partial completion",
+      "applicable_episodes": 16,
+      "recovery_or_handling": {
+        "metric": "recovery_success_rate",
+        "numerator": 16,
+        "denominator": 16,
+        "rate": 1.0
+      },
+      "repeated_action": {
+        "numerator": 0,
+        "denominator": 0,
+        "display": "0/0"
+      },
+      "incorrect_recovery": {
+        "numerator": 0,
+        "denominator": 16,
+        "display": "0/16"
+      }
+    },
+    {
+      "condition_id": "F4_invalid_robot_state",
+      "label": "Invalid robot state",
+      "applicable_episodes": 16,
+      "recovery_or_handling": {
+        "metric": "recovery_success_rate",
+        "numerator": 12,
+        "denominator": 16,
+        "rate": 0.75
+      },
+      "repeated_action": {
+        "numerator": 0,
+        "denominator": 0,
+        "display": "0/0"
+      },
+      "incorrect_recovery": {
+        "numerator": 4,
+        "denominator": 16,
+        "display": "4/16"
+      }
+    },
+    {
+      "condition_id": "F5_infeasible_parameter",
+      "label": "Infeasible parameter",
+      "applicable_episodes": 16,
+      "recovery_or_handling": {
+        "metric": "recovery_success_rate",
+        "numerator": 10,
+        "denominator": 16,
+        "rate": 0.625
+      },
+      "repeated_action": {
+        "numerator": 0,
+        "denominator": 0,
+        "display": "0/0"
+      },
+      "incorrect_recovery": {
+        "numerator": 6,
+        "denominator": 16,
+        "display": "6/16"
+      }
+    },
+    {
+      "condition_id": "F6_second_step_failure",
+      "label": "Second-step failure",
+      "applicable_episodes": 12,
+      "recovery_or_handling": {
+        "metric": "recovery_success_rate",
+        "numerator": 4,
+        "denominator": 12,
+        "rate": 0.3333333333333333
+      },
+      "repeated_action": {
+        "numerator": 8,
+        "denominator": 12,
+        "display": "8/12"
+      },
+      "incorrect_recovery": {
+        "numerator": 8,
+        "denominator": 12,
+        "display": "8/12"
+      }
+    },
+    {
+      "condition_id": "F7_unrecoverable_failure",
+      "label": "Unrecoverable",
+      "applicable_episodes": 16,
+      "recovery_or_handling": {
+        "metric": "correct_termination_rate",
+        "numerator": 6,
+        "denominator": 16,
+        "rate": 0.375
+      },
+      "repeated_action": {
+        "numerator": 0,
+        "denominator": 0,
+        "display": "—"
+      },
+      "incorrect_recovery": {
+        "numerator": 10,
+        "denominator": 16,
+        "display": "10/16"
+      }
+    }
+  ],
+  "experiments": {
+    "formal_f1_f5_f7": {
+      "run_dir": "runs/multifailure_recovery/multifailure_multifailure_formal_20260824T155611Z_9fde5231",
+      "n_episodes": 112
+    },
+    "f6_rerun_new_prompt": {
+      "run_dir": "runs/multifailure_recovery/multifailure_multifailure_f6_rerun_20260825T021403Z_306314eb",
+      "n_episodes": 16
+    },
+    "smoke": {
+      "run_dir": "runs/multifailure_recovery/multifailure_multifailure_smoke_20260824T155256Z_ebde1e3b",
+      "n_episodes": 14
+    }
+  },
+  "recovery_prompt_change": {
+    "file": "src/recovery/recovery_runner.py",
+    "function": "_replan_remaining",
+    "added_constraint": "During recovery, completed_steps are immutable and must never appear again in the recovery plan. Generate only the unfinished suffix required to complete the original request.",
+    "applies_to": "F6 rerun and all future recovery episodes"
+  },
+  "related_reports": [
+    "reports/multifailure_recovery_audit.md",
+    "reports/multifailure_recovery_results.json",
+    "reports/f6_second_step_failure_audit.md"
+  ]
+}

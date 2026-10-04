@@ -1,0 +1,32 @@
+{
+  "experiment": "execution_time_replanning_recovery",
+  "benchmark_version_frozen": "v1.1",
+  "formulation": "canonical",
+  "n_repeats": 3,
+  "max_execution_replans": 2,
+  "model": "qwen2.5:14b",
+  "temperature": 0,
+  "selected_semantic_task_ids": [
+    "P2_01",
+    "P2_02",
+    "P2_04",
+    "P2_05",
+    "P2_07",
+    "P3_01",
+    "P3_02",
+    "P3_05",
+    "P3_08",
+    "P3_09",
+    "P4_01",
+    "P4_02",
+    "P4_05",
+    "P4_06",
+    "P4_07",
+    "P5_01",
+    "P5_02",
+    "P5_03",
+    "P5_06",
+    "P5_09"
+  ],
+  "notes": "20 frozen v1.1 P2–P5 semantic tasks, canonical instruction only. Gold/evaluator unchanged."
+}

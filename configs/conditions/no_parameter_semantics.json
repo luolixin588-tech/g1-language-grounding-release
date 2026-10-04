@@ -1,0 +1,13 @@
+{
+  "name": "no_parameter_semantics",
+  "description": "Planner-visible parameter semantics are anonymized while parameter structure remains unchanged internally.",
+  "model": "qwen2.5:14b",
+  "temperature": 0,
+  "use_json_schema": true,
+  "use_validation_retries": true,
+  "max_attempts": 3,
+  "reduced_capability_info": false,
+  "anonymize_capability_semantics": false,
+  "anonymize_parameter_semantics": true,
+  "alias_permutation_id": 0
+}

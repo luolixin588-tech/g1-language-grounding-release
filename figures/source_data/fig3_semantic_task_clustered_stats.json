@@ -1,0 +1,473 @@
+{
+  "analysis": "fig3_semantic_task_clustered_stats",
+  "note": "Point estimates are unchanged 360-run Task Success rates. Only the inferential unit changes from instruction/sample_id (N=120, 3 runs) to semantic_task_id (N=60, 6 runs: canonical×3 + paraphrase×3).",
+  "official_runs": {
+    "full": "<original-repo>/runs/full/full_20260821T051022Z_d81f78bf",
+    "no_capability_semantics": "<original-repo>/runs/no_capability_semantics/no_capability_semantics_20260824T111546Z_368b8574",
+    "no_parameter_semantics": "<original-repo>/runs/no_parameter_semantics/no_parameter_semantics_20260824T112027Z_d8471060",
+    "no_json_schema": "<original-repo>/runs/no_structure/no_structure_20260821T052009Z_6bf8d7c2",
+    "reduced_capability_info": "<original-repo>/runs/reduced_capability_info/reduced_capability_info_20260821T052504Z_6e0dd3ea"
+  },
+  "unused_candidate_runs": [
+    "runs/full/full_20260907T030550Z_8cfddfbd (task success 80.0%, not the paper Full)",
+    "runs/full/full_20260907T025510Z_929f83bc",
+    "runs/no_capability_semantics/no_capability_semantics_20260907T031047Z_f1f5bca2",
+    "runs/no_parameter_semantics/no_parameter_semantics_20260907T031313Z_41c305ff",
+    "runs/no_schema_constrained_decoding/*20260907*",
+    "runs/multimodel_v1.1/* (other models; Qwen Full is a reuse of the official Full run)",
+    "runs/archive/*",
+    "runs/smoke/*"
+  ],
+  "completeness": {
+    "full": {
+      "label": "full",
+      "n_runs": 360,
+      "n_success": 340,
+      "task_success_rate": 0.9444444444444444,
+      "n_semantic_task_id": 60,
+      "n_sample_id": 120,
+      "formulation_counts": {
+        "canonical": 180,
+        "paraphrase": 180
+      },
+      "n_duplicate_keys": 0,
+      "n_incomplete_tasks": 0,
+      "incomplete_tasks": [],
+      "issues": [],
+      "ok": true
+    },
+    "no_capability_semantics": {
+      "label": "no_capability_semantics",
+      "n_runs": 360,
+      "n_success": 204,
+      "task_success_rate": 0.5666666666666667,
+      "n_semantic_task_id": 60,
+      "n_sample_id": 120,
+      "formulation_counts": {
+        "canonical": 180,
+        "paraphrase": 180
+      },
+      "n_duplicate_keys": 0,
+      "n_incomplete_tasks": 0,
+      "incomplete_tasks": [],
+      "issues": [],
+      "ok": true
+    },
+    "no_parameter_semantics": {
+      "label": "no_parameter_semantics",
+      "n_runs": 360,
+      "n_success": 233,
+      "task_success_rate": 0.6472222222222223,
+      "n_semantic_task_id": 60,
+      "n_sample_id": 120,
+      "formulation_counts": {
+        "canonical": 180,
+        "paraphrase": 180
+      },
+      "n_duplicate_keys": 0,
+      "n_incomplete_tasks": 0,
+      "incomplete_tasks": [],
+      "issues": [],
+      "ok": true
+    },
+    "no_json_schema": {
+      "label": "no_json_schema",
+      "n_runs": 360,
+      "n_success": 335,
+      "task_success_rate": 0.9305555555555556,
+      "n_semantic_task_id": 60,
+      "n_sample_id": 120,
+      "formulation_counts": {
+        "canonical": 180,
+        "paraphrase": 180
+      },
+      "n_duplicate_keys": 0,
+      "n_incomplete_tasks": 0,
+      "incomplete_tasks": [],
+      "issues": [],
+      "ok": true
+    },
+    "reduced_capability_info": {
+      "label": "reduced_capability_info",
+      "n_runs": 360,
+      "n_success": 175,
+      "task_success_rate": 0.4861111111111111,
+      "n_semantic_task_id": 60,
+      "n_sample_id": 120,
+      "formulation_counts": {
+        "canonical": 180,
+        "paraphrase": 180
+      },
+      "n_duplicate_keys": 0,
+      "n_incomplete_tasks": 0,
+      "incomplete_tasks": [],
+      "issues": [],
+      "ok": true
+    }
+  },
+  "old_method": {
+    "cluster": "instruction / sample_id",
+    "n_clusters": 120,
+    "runs_per_cluster": 3,
+    "bootstrap": "resample 120 instructions with replacement; 3 repeats stay together; paired Full/ablation; B=10000; seed=0; percentile 95% CI",
+    "mcnemar": "instruction success = 1 iff all 3 repeats succeed; exact two-sided McNemar, p=0.5",
+    "holm_family": "Fig.3a primary: Full vs no_capability_semantics, no_parameter_semantics, no_json_schema (3 tests). Reduced was previously Holm-corrected only with A1 in reports/ablation_summary.md."
+  },
+  "new_method": {
+    "cluster": "semantic_task_id",
+    "n_clusters": 60,
+    "runs_per_cluster": 6,
+    "bootstrap": "resample 60 semantic tasks with replacement; each draw keeps canonical×3 and paraphrase×3; paired Full/ablation; B=10000; seed=0; percentile 95% CI",
+    "mcnemar": "semantic-task success = 1 iff canonical 3/3 AND paraphrase 3/3 (6/6); exact two-sided McNemar, p=0.5",
+    "holm_family": "Full vs no_capability_semantics, no_parameter_semantics, no_json_schema. Reduced is reference-only and is not Holm-corrected."
+  },
+  "point_estimates": {
+    "full": {
+      "n_runs": 360,
+      "n_success": 340,
+      "task_success_rate": 0.9444444444444444
+    },
+    "no_capability_semantics": {
+      "n_runs": 360,
+      "n_success": 204,
+      "task_success_rate": 0.5666666666666667
+    },
+    "no_parameter_semantics": {
+      "n_runs": 360,
+      "n_success": 233,
+      "task_success_rate": 0.6472222222222223
+    },
+    "no_json_schema": {
+      "n_runs": 360,
+      "n_success": 335,
+      "task_success_rate": 0.9305555555555556
+    },
+    "reduced_capability_info": {
+      "n_runs": 360,
+      "n_success": 175,
+      "task_success_rate": 0.4861111111111111
+    }
+  },
+  "comparisons": [
+    {
+      "comparison": "Full vs No capability semantics",
+      "key": "no_capability_semantics",
+      "reference_only": false,
+      "full_rate": 0.9444444444444444,
+      "ablation_rate": 0.5666666666666667,
+      "delta_pp": -37.77777777777778,
+      "old_instruction_clustered_95ci_pp": [
+        -46.9,
+        -28.6
+      ],
+      "new_semantic_task_clustered_95ci_pp": [
+        -50.27777777777778,
+        -25.27777777777778
+      ],
+      "ci_width_old_pp": 18.299999999999997,
+      "ci_width_new_pp": 25.0,
+      "mcnemar_raw_p": 1.5497207641601562e-06,
+      "holm_adjusted_p": 4.649162292480469e-06,
+      "old_mcnemar_raw_p": 4.355626970209414e-12,
+      "old_holm_adjusted_p": 1.3066880910628242e-11,
+      "old_significant_0.05": true,
+      "new_significant_0.05": true,
+      "significance_changed": false
+    },
+    {
+      "comparison": "Full vs No parameter semantics",
+      "key": "no_parameter_semantics",
+      "reference_only": false,
+      "full_rate": 0.9444444444444444,
+      "ablation_rate": 0.6472222222222223,
+      "delta_pp": -29.722222222222218,
+      "old_instruction_clustered_95ci_pp": [
+        -38.9,
+        -20.6
+      ],
+      "new_semantic_task_clustered_95ci_pp": [
+        -41.666666666666664,
+        -18.055555555555557
+      ],
+      "ci_width_old_pp": 18.299999999999997,
+      "ci_width_new_pp": 23.611111111111107,
+      "mcnemar_raw_p": 5.7220458984375e-06,
+      "holm_adjusted_p": 1.1444091796875e-05,
+      "old_mcnemar_raw_p": 5.631591193377972e-09,
+      "old_holm_adjusted_p": 1.1263182386755943e-08,
+      "old_significant_0.05": true,
+      "new_significant_0.05": true,
+      "significance_changed": false
+    },
+    {
+      "comparison": "Full vs No JSON Schema",
+      "key": "no_json_schema",
+      "reference_only": false,
+      "full_rate": 0.9444444444444444,
+      "ablation_rate": 0.9305555555555556,
+      "delta_pp": -1.388888888888884,
+      "old_instruction_clustered_95ci_pp": [
+        -3.6,
+        0.0
+      ],
+      "new_semantic_task_clustered_95ci_pp": [
+        -3.6111111111111094,
+        0.0
+      ],
+      "ci_width_old_pp": 3.6,
+      "ci_width_new_pp": 3.6111111111111094,
+      "mcnemar_raw_p": 0.5,
+      "holm_adjusted_p": 0.5,
+      "old_mcnemar_raw_p": 0.5,
+      "old_holm_adjusted_p": 0.5,
+      "old_significant_0.05": false,
+      "new_significant_0.05": false,
+      "significance_changed": false
+    },
+    {
+      "comparison": "Full vs Reduced capability information",
+      "key": "reduced_capability_info",
+      "reference_only": true,
+      "full_rate": 0.9444444444444444,
+      "ablation_rate": 0.4861111111111111,
+      "delta_pp": -45.83333333333333,
+      "old_instruction_clustered_95ci_pp": [
+        -55.0,
+        -36.7
+      ],
+      "new_semantic_task_clustered_95ci_pp": [
+        -58.333333333333336,
+        -33.33333333333333
+      ],
+      "ci_width_old_pp": 18.299999999999997,
+      "ci_width_new_pp": 25.000000000000007,
+      "mcnemar_raw_p": 3.725290298461914e-09,
+      "holm_adjusted_p": null,
+      "old_mcnemar_raw_p": 8.049116928532385e-16,
+      "old_holm_adjusted_p": null,
+      "old_significant_0.05": null,
+      "new_significant_0.05": null,
+      "significance_changed": null
+    }
+  ],
+  "mcnemar_2x2_semantic_task": [
+    {
+      "comparison": "Full vs No capability semantics",
+      "key": "no_capability_semantics",
+      "both_success": 32,
+      "full_only": 24,
+      "ablation_only": 1,
+      "both_fail": 3,
+      "n_semantic_tasks": 60
+    },
+    {
+      "comparison": "Full vs No parameter semantics",
+      "key": "no_parameter_semantics",
+      "both_success": 34,
+      "full_only": 22,
+      "ablation_only": 1,
+      "both_fail": 3,
+      "n_semantic_tasks": 60
+    },
+    {
+      "comparison": "Full vs No JSON Schema",
+      "key": "no_json_schema",
+      "both_success": 54,
+      "full_only": 2,
+      "ablation_only": 0,
+      "both_fail": 4,
+      "n_semantic_tasks": 60
+    },
+    {
+      "comparison": "Full vs Reduced capability information",
+      "key": "reduced_capability_info",
+      "both_success": 27,
+      "full_only": 29,
+      "ablation_only": 0,
+      "both_fail": 4,
+      "n_semantic_tasks": 60
+    }
+  ],
+  "new_mcnemar_detail": {
+    "no_capability_semantics": {
+      "aggregation": "semantic-task success = 1 iff canonical 3/3 AND paraphrase 3/3 (6/6 runs Task Success)",
+      "n_semantic_tasks": 60,
+      "n_both_success": 32,
+      "n_a_only": 24,
+      "n_b_only": 1,
+      "n_both_fail": 3,
+      "mcnemar": {
+        "n12": 24,
+        "n21": 1,
+        "n_discordant": 25,
+        "p_value": 1.5497207641601562e-06
+      }
+    },
+    "no_parameter_semantics": {
+      "aggregation": "semantic-task success = 1 iff canonical 3/3 AND paraphrase 3/3 (6/6 runs Task Success)",
+      "n_semantic_tasks": 60,
+      "n_both_success": 34,
+      "n_a_only": 22,
+      "n_b_only": 1,
+      "n_both_fail": 3,
+      "mcnemar": {
+        "n12": 22,
+        "n21": 1,
+        "n_discordant": 23,
+        "p_value": 5.7220458984375e-06
+      }
+    },
+    "no_json_schema": {
+      "aggregation": "semantic-task success = 1 iff canonical 3/3 AND paraphrase 3/3 (6/6 runs Task Success)",
+      "n_semantic_tasks": 60,
+      "n_both_success": 54,
+      "n_a_only": 2,
+      "n_b_only": 0,
+      "n_both_fail": 4,
+      "mcnemar": {
+        "n12": 2,
+        "n21": 0,
+        "n_discordant": 2,
+        "p_value": 0.5
+      }
+    },
+    "reduced_capability_info": {
+      "aggregation": "semantic-task success = 1 iff canonical 3/3 AND paraphrase 3/3 (6/6 runs Task Success)",
+      "n_semantic_tasks": 60,
+      "n_both_success": 27,
+      "n_a_only": 29,
+      "n_b_only": 0,
+      "n_both_fail": 4,
+      "mcnemar": {
+        "n12": 29,
+        "n21": 0,
+        "n_discordant": 29,
+        "p_value": 3.725290298461914e-09
+      }
+    }
+  },
+  "new_bootstrap_detail": {
+    "no_capability_semantics": {
+      "cluster": "semantic_task_id",
+      "n_clusters": 60,
+      "runs_per_cluster": 6,
+      "n_boot": 10000,
+      "seed": 0,
+      "observed": {
+        "a": 0.9444444444444444,
+        "b": 0.5666666666666667,
+        "diff_b_minus_a": -0.37777777777777777
+      },
+      "diff_ci95": [
+        -0.5027777777777778,
+        -0.25277777777777777
+      ]
+    },
+    "no_parameter_semantics": {
+      "cluster": "semantic_task_id",
+      "n_clusters": 60,
+      "runs_per_cluster": 6,
+      "n_boot": 10000,
+      "seed": 0,
+      "observed": {
+        "a": 0.9444444444444444,
+        "b": 0.6472222222222223,
+        "diff_b_minus_a": -0.29722222222222217
+      },
+      "diff_ci95": [
+        -0.41666666666666663,
+        -0.18055555555555558
+      ]
+    },
+    "no_json_schema": {
+      "cluster": "semantic_task_id",
+      "n_clusters": 60,
+      "runs_per_cluster": 6,
+      "n_boot": 10000,
+      "seed": 0,
+      "observed": {
+        "a": 0.9444444444444444,
+        "b": 0.9305555555555556,
+        "diff_b_minus_a": -0.01388888888888884
+      },
+      "diff_ci95": [
+        -0.036111111111111094,
+        0.0
+      ]
+    },
+    "reduced_capability_info": {
+      "cluster": "semantic_task_id",
+      "n_clusters": 60,
+      "runs_per_cluster": 6,
+      "n_boot": 10000,
+      "seed": 0,
+      "observed": {
+        "a": 0.9444444444444444,
+        "b": 0.4861111111111111,
+        "diff_b_minus_a": -0.4583333333333333
+      },
+      "diff_ci95": [
+        -0.5833333333333334,
+        -0.33333333333333326
+      ]
+    }
+  },
+  "old_instruction_mcnemar_recomputed": {
+    "no_capability_semantics": {
+      "aggregation": "instruction succeeds iff all 3 repeats succeed",
+      "n_instructions": 120,
+      "n_both_success": 66,
+      "n_a_only": 47,
+      "n_b_only": 2,
+      "n_both_fail": 5,
+      "mcnemar": {
+        "n12": 47,
+        "n21": 2,
+        "n_discordant": 49,
+        "p_value": 4.355626970209414e-12
+      }
+    },
+    "no_parameter_semantics": {
+      "aggregation": "instruction succeeds iff all 3 repeats succeed",
+      "n_instructions": 120,
+      "n_both_success": 74,
+      "n_a_only": 39,
+      "n_b_only": 3,
+      "n_both_fail": 4,
+      "mcnemar": {
+        "n12": 39,
+        "n21": 3,
+        "n_discordant": 42,
+        "p_value": 5.631591193377972e-09
+      }
+    },
+    "no_json_schema": {
+      "aggregation": "instruction succeeds iff all 3 repeats succeed",
+      "n_instructions": 120,
+      "n_both_success": 111,
+      "n_a_only": 2,
+      "n_b_only": 0,
+      "n_both_fail": 7,
+      "mcnemar": {
+        "n12": 2,
+        "n21": 0,
+        "n_discordant": 2,
+        "p_value": 0.5
+      }
+    },
+    "reduced_capability_info": {
+      "aggregation": "instruction succeeds iff all 3 repeats succeed",
+      "n_instructions": 120,
+      "n_both_success": 57,
+      "n_a_only": 56,
+      "n_b_only": 1,
+      "n_both_fail": 6,
+      "mcnemar": {
+        "n12": 56,
+        "n21": 1,
+        "n_discordant": 57,
+        "p_value": 8.049116928532385e-16
+      }
+    }
+  }
+}

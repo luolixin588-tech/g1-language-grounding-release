@@ -1,0 +1,37 @@
+{
+  "run_id": "multifailure_multifailure_f6_rerun_20260825T021403Z_306314eb",
+  "config_name": "multifailure_f6_rerun",
+  "benchmark_version_frozen": "v1.1",
+  "multifailure_config": {
+    "experiment": "multifailure_f6_rerun",
+    "benchmark_version_frozen": "v1.1",
+    "formulation": "canonical",
+    "max_execution_replans": 2,
+    "model": "qwen2.5:14b",
+    "temperature": 0,
+    "n_repeats": 2,
+    "notes": "F6-only rerun after recovery prompt constraint. Same tasks/repeats as formal multifailure F6.",
+    "condition_task_applicability": {
+      "F6_second_step_failure": [
+        "P4_01",
+        "P4_02",
+        "P4_05",
+        "P4_06",
+        "P5_01",
+        "P5_05",
+        "P5_06",
+        "P5_09"
+      ]
+    }
+  },
+  "n_episodes": 16,
+  "failure_conditions": [
+    "F1_dispatch_rejected",
+    "F2_execution_timeout",
+    "F3_partial_completion",
+    "F4_invalid_robot_state",
+    "F5_infeasible_parameter",
+    "F6_second_step_failure",
+    "F7_unrecoverable_failure"
+  ]
+}
